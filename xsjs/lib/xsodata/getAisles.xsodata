@@ -1,0 +1,5 @@
+service{
+"core.models::AISLES"
+as "aislesSet"
+keys("aisle_id");
+}

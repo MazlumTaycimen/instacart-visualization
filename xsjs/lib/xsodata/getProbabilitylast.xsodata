@@ -1,0 +1,6 @@
+service{
+"core.models::PROBABILITY_REORDER_LAST_ORDER"
+as "probabilitylastSet"
+keys("DAYS_SINCE_PRIOR_ORDER")
+parameters via entity "IP9";
+} 

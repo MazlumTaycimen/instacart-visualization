@@ -1,0 +1,6 @@
+service{
+"core.models::REORDER_NUMBERS"
+as "reorderSet"
+keys("ANZAHL")
+parameters via entity "IP7";
+} 

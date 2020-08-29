@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Calculation:scenario xmlns:Calculation="http://www.sap.com/ndb/BiModelCalculation.ecore" id="core.models::PRODUCT_PORTFOLIO" applyPrivilegeType="NONE" dataCategory="DIMENSION" dimensionType="STANDARD" schemaVersion="3.0" outputViewType="Projection" cacheInvalidationPeriod="NONE" enforceSqlExecution="false">
+<descriptions defaultDescription="PRODUCT_PORTFOLIO"/>
+<localVariables/>
+<variableMappings/>
+<dataSources>
+  <DataSource id="PRODUCT_PORTFOLIO" type="TABLE_FUNCTION">
+    <resourceUri>PRODUCT_PORTFOLIO</resourceUri>
+  </DataSource>
+</dataSources>
+<calculationViews/>
+<logicalModel id="PRODUCT_PORTFOLIO">
+  <attributes>
+    <attribute id="ANZAHL_PRODUCTS" order="1" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="ANZAHL_PRODUCTS"/>
+      <keyMapping columnObjectName="PRODUCT_PORTFOLIO" columnName="ANZAHL_PRODUCTS"/>
+    </attribute>
+    <attribute id="ANZAHL_ORDERS" order="2" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="ANZAHL_ORDERS"/>
+      <keyMapping columnObjectName="PRODUCT_PORTFOLIO" columnName="ANZAHL_ORDERS"/>
+    </attribute>
+    <attribute id="DEPARTMENT" order="3" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="DEPARTMENT"/>
+      <keyMapping columnObjectName="PRODUCT_PORTFOLIO" columnName="DEPARTMENT"/>
+    </attribute>
+    <attribute id="AISLE" order="4" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="AISLE"/>
+      <keyMapping columnObjectName="PRODUCT_PORTFOLIO" columnName="AISLE"/>
+    </attribute>
+  </attributes>
+  <calculatedAttributes/>
+  <baseMeasures/>
+  <calculatedMeasures/>
+  <restrictedMeasures/>
+</logicalModel>
+<layout>
+  <shapes>
+    <shape expanded="true" modelObjectName="Output" modelObjectNameSpace="MeasureGroup">
+      <upperLeftCorner x="40" y="85"/>
+    </shape>
+  </shapes>
+</layout>
+</Calculation:scenario>

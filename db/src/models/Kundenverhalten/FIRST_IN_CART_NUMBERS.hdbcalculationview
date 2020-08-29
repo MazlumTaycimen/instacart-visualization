@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Calculation:scenario xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Calculation="http://www.sap.com/ndb/BiModelCalculation.ecore" xmlns:Variable="http://www.sap.com/ndb/BiModelVariable.ecore" id="core.models::FIRST_IN_CART_NUMBERS" applyPrivilegeType="NONE" dataCategory="DIMENSION" dimensionType="STANDARD" schemaVersion="3.0" outputViewType="Projection" cacheInvalidationPeriod="NONE" enforceSqlExecution="false">
+<descriptions defaultDescription="FIRST_IN_CART_NUMBERS"/>
+<localVariables>
+  <variable id="IP_DEPARTMENT" parameter="true">
+    <descriptions defaultDescription=" "/>
+    <variableProperties datatype="NVARCHAR" length="50">
+      <valueDomain type="empty"/>
+      <selection/>
+    </variableProperties>
+  </variable>
+  <variable id="IP_AISLE" parameter="true">
+    <descriptions defaultDescription=" "/>
+    <variableProperties datatype="NVARCHAR" length="50">
+      <valueDomain type="empty"/>
+      <selection/>
+    </variableProperties>
+  </variable>
+
+  <variable id="IP_PRODUCT" parameter="true">
+    <descriptions defaultDescription=" "/>
+    <variableProperties datatype="NVARCHAR" length="200">
+      <valueDomain type="empty"/>
+      <selection/>
+    </variableProperties>
+  </variable>
+</localVariables>
+<variableMappings>
+  <mapping xsi:type="Variable:VariableMapping" dataSource="FIRST_IN_CART_NUMBERS">
+    <targetVariable name="IP_DEPARTMENT" resourceUri="FIRST_IN_CART_NUMBERS"/>
+    <localVariable>IP_DEPARTMENT</localVariable>
+  </mapping>
+  <mapping xsi:type="Variable:VariableMapping" dataSource="FIRST_IN_CART_NUMBERS">
+    <targetVariable name="IP_AISLE" resourceUri="FIRST_IN_CART_NUMBERS"/>
+    <localVariable>IP_AISLE</localVariable>
+  </mapping>
+  <mapping xsi:type="Variable:VariableMapping" dataSource="FIRST_IN_CART_NUMBERS">
+    <targetVariable name="IP_PRODUCT" resourceUri="FIRST_IN_CART_NUMBERS"/>
+    <localVariable>IP_PRODUCT</localVariable>
+  </mapping>
+</variableMappings>
+<dataSources>
+  <DataSource id="FIRST_IN_CART_NUMBERS" type="TABLE_FUNCTION">
+    <resourceUri>FIRST_IN_CART_NUMBERS</resourceUri>
+  </DataSource>
+</dataSources>
+<calculationViews/>
+<logicalModel id="FIRST_IN_CART_NUMBERS">
+  <attributes>
+    <attribute id="ANZAHL" order="1" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="ANZAHL"/>
+      <keyMapping columnObjectName="FIRST_IN_CART_NUMBERS" columnName="ANZAHL"/>
+    </attribute>
+    <attribute id="PRODUCT_NAME" order="2" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PRODUCT_NAME"/>
+      <keyMapping columnObjectName="FIRST_IN_CART_NUMBERS" columnName="PRODUCT_NAME"/>
+    </attribute>
+  </attributes>
+  <calculatedAttributes/>
+  <baseMeasures/>
+  <calculatedMeasures/>
+  <restrictedMeasures/>
+</logicalModel>
+<layout>
+  <shapes>
+    <shape expanded="true" modelObjectName="Output" modelObjectNameSpace="MeasureGroup">
+      <upperLeftCorner x="40" y="85"/>
+    </shape>
+  </shapes>
+</layout>
+</Calculation:scenario>

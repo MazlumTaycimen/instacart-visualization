@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Calculation:scenario xmlns:Calculation="http://www.sap.com/ndb/BiModelCalculation.ecore" id="core.models::PRODUCTS" applyPrivilegeType="NONE" dataCategory="DIMENSION" dimensionType="STANDARD" schemaVersion="3.0" outputViewType="Projection" cacheInvalidationPeriod="NONE" enforceSqlExecution="false">
+<descriptions defaultDescription="PRODUCTS"/>
+<localVariables/>
+<variableMappings/>
+<dataSources>
+  <DataSource id="S_PRODUCTS">
+    <resourceUri>S_PRODUCTS</resourceUri>
+  </DataSource>
+</dataSources>
+<calculationViews/>
+<logicalModel id="S_PRODUCTS">
+  <attributes>
+    <attribute id="product_name" order="1" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="product_name"/>
+      <keyMapping columnObjectName="S_PRODUCTS" columnName="product_name"/>
+    </attribute>
+    <attribute id="product_id" order="2" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="product_id"/>
+      <keyMapping columnObjectName="S_PRODUCTS" columnName="product_id"/>
+    </attribute>
+  </attributes>
+  <calculatedAttributes/>
+  <baseMeasures/>
+  <calculatedMeasures/>
+  <restrictedMeasures/>
+</logicalModel>
+<layout>
+  <shapes>
+    <shape expanded="true" modelObjectName="Output" modelObjectNameSpace="MeasureGroup">
+      <upperLeftCorner x="40" y="85"/>
+    </shape>
+  </shapes>
+</layout>
+</Calculation:scenario>

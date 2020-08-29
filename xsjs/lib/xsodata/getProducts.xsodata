@@ -1,0 +1,9 @@
+service{
+"core.models::PRODUCTS"
+as "productsSet"
+keys("product_id");
+}
+settings {  
+  limits 
+      max_records = 50000;
+}

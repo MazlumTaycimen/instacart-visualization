@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Calculation:scenario xmlns:Calculation="http://www.sap.com/ndb/BiModelCalculation.ecore" id="core.models::ORDER_RANKING" applyPrivilegeType="NONE" dataCategory="DIMENSION" dimensionType="STANDARD" schemaVersion="3.0" outputViewType="Projection" cacheInvalidationPeriod="NONE" enforceSqlExecution="false">
+<descriptions defaultDescription="Order Ranking"/>
+<localVariables/>
+<variableMappings/>
+<dataSources>
+  <DataSource id="ORDER_RANKING" type="TABLE_FUNCTION">
+    <resourceUri>ORDER_RANKING</resourceUri>
+  </DataSource>
+</dataSources>
+<calculationViews/>
+<logicalModel id="ORDER_RANKING">
+  <attributes>
+    <attribute id="PRODUCT_NAME" order="1" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PRODUCT_NAME"/>
+      <keyMapping columnObjectName="ORDER_RANKING" columnName="PRODUCT_NAME"/>
+    </attribute>
+    <attribute id="AISLE" order="2" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="AISLE"/>
+      <keyMapping columnObjectName="ORDER_RANKING" columnName="AISLE"/>
+    </attribute>
+    <attribute id="DEPARTMENT" order="3" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="DEPARTMENT"/>
+      <keyMapping columnObjectName="ORDER_RANKING" columnName="DEPARTMENT"/>
+    </attribute>
+    <attribute id="COUNT_ORDERS" order="4" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="COUNT_ORDERS"/>
+      <keyMapping columnObjectName="ORDER_RANKING" columnName="COUNT_ORDERS"/>
+    </attribute>
+  </attributes>
+  <calculatedAttributes/>
+  <baseMeasures/>
+  <calculatedMeasures/>
+  <restrictedMeasures/>
+</logicalModel>
+<layout>
+  <shapes>
+    <shape expanded="true" modelObjectName="Output" modelObjectNameSpace="MeasureGroup">
+      <upperLeftCorner x="40" y="85"/>
+    </shape>
+  </shapes>
+</layout>
+</Calculation:scenario>

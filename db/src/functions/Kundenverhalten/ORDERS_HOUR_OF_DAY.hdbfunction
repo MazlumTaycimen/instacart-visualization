@@ -1,0 +1,36 @@
+FUNCTION "ORDERS_HOUR_OF_DAY"(IP_DEPARTMENT NVARCHAR(50), IP_AISLE NVARCHAR(50), IP_PRODUCT NVARCHAR(200))
+       RETURNS table (HOUR_OF_DAY INTEGER,
+       	ANZAHL INTEGER)
+       LANGUAGE SQLSCRIPT 
+       SQL SECURITY INVOKER AS 
+BEGIN 
+
+
+
+IF :IP_AISLE = 'all'	THEN 
+	IP_AISLE = '%%';
+ELSE
+	IP_AISLE = IP_AISLE;
+END IF;
+
+IF :IP_DEPARTMENT = 'all'	THEN 
+	IP_DEPARTMENT = '%%';
+ELSE
+	IP_DEPARTMENT = IP_DEPARTMENT;
+END IF;
+
+IF :IP_PRODUCT = 'all'	THEN 
+	IP_PRODUCT = '%%';
+ELSE
+	IP_PRODUCT = IP_PRODUCT;
+END IF;
+
+
+
+return
+SELECT "order_hour_of_day" as HOUR_OF_DAY, Count("order_hour_of_day") as ANZAHL
+from "core.models::ORDERS"
+WHERE "department" LIKE IP_DEPARTMENT and "aisle" LIKE IP_AISLE and "product_name" LIKE IP_PRODUCT 
+group by "order_hour_of_day";
+
+END;

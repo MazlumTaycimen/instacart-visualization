@@ -1,0 +1,6 @@
+service{
+"core.models::PRODUCTS_ORGANIC"
+as "OrganicVsNonorganic"
+keys("ORGANIC")
+parameters via entity "IP2";
+}

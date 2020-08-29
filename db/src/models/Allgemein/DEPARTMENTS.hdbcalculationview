@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Calculation:scenario xmlns:Calculation="http://www.sap.com/ndb/BiModelCalculation.ecore" id="core.models::DEPARTMENTS" applyPrivilegeType="NONE" dataCategory="DIMENSION" dimensionType="STANDARD" schemaVersion="3.0" outputViewType="Projection" cacheInvalidationPeriod="NONE" enforceSqlExecution="false">
+<descriptions defaultDescription="DEPARTMENTS"/>
+<localVariables/>
+<variableMappings/>
+<dataSources>
+  <DataSource id="S_DEPARTMENTS">
+    <resourceUri>S_DEPARTMENTS</resourceUri>
+  </DataSource>
+</dataSources>
+<calculationViews/>
+<logicalModel id="S_DEPARTMENTS">
+  <attributes>
+    <attribute id="department" order="1" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="department"/>
+      <keyMapping columnObjectName="S_DEPARTMENTS" columnName="department"/>
+    </attribute>
+    <attribute id="department_id" order="2" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="department_id"/>
+      <keyMapping columnObjectName="S_DEPARTMENTS" columnName="department_id"/>
+    </attribute>
+  </attributes>
+  <calculatedAttributes/>
+  <baseMeasures/>
+  <calculatedMeasures/>
+  <restrictedMeasures/>
+</logicalModel>
+<layout>
+  <shapes>
+    <shape expanded="true" modelObjectName="Output" modelObjectNameSpace="MeasureGroup">
+      <upperLeftCorner x="40" y="85"/>
+    </shape>
+  </shapes>
+</layout>
+</Calculation:scenario>

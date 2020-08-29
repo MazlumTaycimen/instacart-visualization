@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Calculation:scenario xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Calculation="http://www.sap.com/ndb/BiModelCalculation.ecore" xmlns:Variable="http://www.sap.com/ndb/BiModelVariable.ecore" id="core.models::USER_ORDERS" applyPrivilegeType="NONE" dataCategory="DIMENSION" dimensionType="STANDARD" schemaVersion="3.0" outputViewType="Projection" cacheInvalidationPeriod="NONE" enforceSqlExecution="false">
+<descriptions defaultDescription="USER_ORDERS"/>
+<localVariables>
+  <variable id="IP_USER_ID" parameter="true">
+    <descriptions defaultDescription=" "/>
+    <variableProperties datatype="NVARCHAR" length="50">
+      <valueDomain type="empty"/>
+      <selection/>
+    </variableProperties>
+  </variable>
+</localVariables>
+<variableMappings>
+  <mapping xsi:type="Variable:VariableMapping" dataSource="USER_ORDERS">
+    <targetVariable name="IP_USER_ID" resourceUri="USER_ORDERS"/>
+    <localVariable>IP_USER_ID</localVariable>
+  </mapping>
+</variableMappings>
+<dataSources>
+  <DataSource id="USER_ORDERS" type="TABLE_FUNCTION">
+    <resourceUri>USER_ORDERS</resourceUri>
+  </DataSource>
+</dataSources>
+<calculationViews/>
+<logicalModel id="USER_ORDERS">
+  <attributes>
+    <attribute id="ORDER_DOW" order="1" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="ORDER_DOW"/>
+      <keyMapping columnObjectName="USER_ORDERS" columnName="ORDER_DOW"/>
+    </attribute>
+    <attribute id="ORDER_HOD" order="2" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="ORDER_HOD"/>
+      <keyMapping columnObjectName="USER_ORDERS" columnName="ORDER_HOD"/>
+    </attribute>
+    <attribute id="DAYS_SINCE_PRIOR" order="3" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="DAYS_SINCE_PRIOR"/>
+      <keyMapping columnObjectName="USER_ORDERS" columnName="DAYS_SINCE_PRIOR"/>
+    </attribute>
+    <attribute id="PRODUCT_ID" order="4" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PRODUCT_ID"/>
+      <keyMapping columnObjectName="USER_ORDERS" columnName="PRODUCT_ID"/>
+    </attribute>
+    <attribute id="ADD_TO_CART_ORDER" order="5" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="ADD_TO_CART_ORDER"/>
+      <keyMapping columnObjectName="USER_ORDERS" columnName="ADD_TO_CART_ORDER"/>
+    </attribute>
+    <attribute id="REORDERED" order="6" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="REORDERED"/>
+      <keyMapping columnObjectName="USER_ORDERS" columnName="REORDERED"/>
+    </attribute>
+    <attribute id="PRODUCT_NAME" order="7" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PRODUCT_NAME"/>
+      <keyMapping columnObjectName="USER_ORDERS" columnName="PRODUCT_NAME"/>
+    </attribute>
+    <attribute id="AISLE" order="8" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="AISLE"/>
+      <keyMapping columnObjectName="USER_ORDERS" columnName="AISLE"/>
+    </attribute>
+    <attribute id="ORDER_ID" order="9" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="ORDER_ID"/>
+      <keyMapping columnObjectName="USER_ORDERS" columnName="ORDER_ID"/>
+    </attribute>
+    <attribute id="DERPARTMENT" order="10" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="DERPARTMENT"/>
+      <keyMapping columnObjectName="USER_ORDERS" columnName="DERPARTMENT"/>
+    </attribute>
+    <attribute id="USER_ID" order="11" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="USER_ID"/>
+      <keyMapping columnObjectName="USER_ORDERS" columnName="USER_ID"/>
+    </attribute>
+    <attribute id="ORDER_NUMBER" order="12" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="ORDER_NUMBER"/>
+      <keyMapping columnObjectName="USER_ORDERS" columnName="ORDER_NUMBER"/>
+    </attribute>
+  </attributes>
+  <calculatedAttributes/>
+  <baseMeasures/>
+  <calculatedMeasures/>
+  <restrictedMeasures/>
+</logicalModel>
+<layout>
+  <shapes>
+    <shape expanded="true" modelObjectName="Output" modelObjectNameSpace="MeasureGroup">
+      <upperLeftCorner x="40" y="85"/>
+    </shape>
+  </shapes>
+</layout>
+</Calculation:scenario>

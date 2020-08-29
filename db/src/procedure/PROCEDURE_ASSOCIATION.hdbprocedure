@@ -1,0 +1,82 @@
+PROCEDURE "PROCEDURE_ASSOCIATION"( 
+	in IP_PRODUCT_NAME NVARCHAR(200),
+	out SUPPORT_KONFIDENZ_LIFT table(
+		PRODUCT_NAME NVARCHAR(200),
+		SUPPORT Double,
+		KONFIDENZ Double,
+		LIFT Double
+	),
+	out PRODUCT_ANZAHL table(PRODUCT_NAME NVARCHAR(200), Anzahl Integer)
+	
+)
+   LANGUAGE SQLSCRIPT
+   SQL SECURITY INVOKER
+   --DEFAULT SCHEMA <default_schema_name>
+   READS SQL DATA AS
+BEGIN
+
+/* 
+Support Anzahl wenn Produkt 1 gekauft wurde, ob auch Produkt 2 gekauft wurde / Anzahl Alle Orders
+Konfidenz Anzahl wenn Produkt 1 gekauft wurde, ob auch Produkt 2 gekauft wurde / Wie oft wurde Produkt 1 gekauft
+Lift Konfidenz/Support
+*/
+
+
+
+
+declare lv_index int = 0;
+/*CREATE GLOBAL TEMPORARY TABLE  test123  (PRODUCT_NAME NVARCHAR(200), Anzahl Integer); */
+declare SUPPORT double = 0;
+declare SUPPORT2 double = 0;
+declare KONFIDENZ double = 0;
+declare LIFT double = 0;
+
+
+DECLARE ALL_ORDERS int;
+DECLARE ALL_PRODUCT_ORDERS int;
+DECLARE ALL_PRODUCT_ORDERS2 int;
+DECLARE PRODUCT_NAME2 NVARCHAR(200);
+
+
+Select  Count(DISTINCT "order_id")  INTO ALL_ORDERS from "core.models::ORDERS";  /* 3214872 */
+
+Select  Count("product_name") INTO ALL_PRODUCT_ORDERS from "core.models::ORDERS"
+where "product_name" LIKE IP_PRODUCT_NAME;
+
+
+
+
+
+PRODUCT_ANZAHL =  Select "product_name" as PRODUCT_NAME, Count("product_id") AS ANZAHL from  "core.models::ORDERS" WHERE "order_id" IN (
+	SELECT  "order_id" 
+from "core.models::ORDERS"
+where "product_name" LIKE IP_PRODUCT_NAME 
+) 
+AND "product_name" NOT LIKE IP_PRODUCT_NAME 
+GROUP BY "product_name";
+
+
+FOR lv_index in  1..record_count(:PRODUCT_ANZAHL) DO
+	PRODUCT_NAME2 = :PRODUCT_ANZAHL.PRODUCT_NAME[lv_index];
+
+	SUPPORT = :PRODUCT_ANZAHL.Anzahl[lv_index] / ALL_ORDERS;
+	KONFIDENZ = (:PRODUCT_ANZAHL.Anzahl[lv_index]/ALL_ORDERS) / (ALL_PRODUCT_ORDERS/ALL_ORDERS);
+IF :SUPPORT = 0	THEN 
+		SUPPORT = 1;
+ELSE
+
+	Select  Count("product_name") INTO ALL_PRODUCT_ORDERS2 from "core.models::ORDERS"
+where "product_name" LIKE PRODUCT_NAME2;
+	
+	SUPPORT2 =  (ALL_PRODUCT_ORDERS2 /ALL_ORDERS);
+	LIFT = KONFIDENZ/SUPPORT2;
+	:SUPPORT_KONFIDENZ_LIFT.INSERT((PRODUCT_NAME2, SUPPORT, KONFIDENZ, LIFT), lv_index);
+	
+END IF;
+	
+	
+	
+END FOR;
+
+    
+END

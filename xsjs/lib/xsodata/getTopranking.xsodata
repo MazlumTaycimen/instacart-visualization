@@ -1,0 +1,5 @@
+service{
+"core.models::ORDER_RANKING"
+as "toprankingdata"
+keys("PRODUCT_NAME");
+}

@@ -1,0 +1,6 @@
+service{
+"core.models::ORDER_RANKING_INPUT"
+as "ProductTopRankingInput"
+keys("PRODUCT_NAME")
+parameters via entity "IP";
+}

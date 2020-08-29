@@ -1,0 +1,17 @@
+FUNCTION "Test1"(IP_PRODUCT_NAME NVARCHAR(200))
+       RETURNS  table(PRODUCT_NAME NVARCHAR(200), Anzahl Integer)
+       LANGUAGE SQLSCRIPT 
+       SQL SECURITY INVOKER AS 
+BEGIN 
+   
+   return
+ Select "product_name" as PRODUCT_NAME, Count("product_id") AS ANZAHL from  "core.models::ORDERS" WHERE "order_id" IN (
+ SELECT  "order_id" 
+from "core.models::ORDERS"
+where "product_name" LIKE IP_PRODUCT_NAME 
+) 
+AND "product_name" NOT LIKE IP_PRODUCT_NAME 
+GROUP BY "product_name";
+   
+   
+END;

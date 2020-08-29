@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Calculation:scenario xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Calculation="http://www.sap.com/ndb/BiModelCalculation.ecore" id="core.models::PRODUCTS_DEPARTMENT_AISLE" applyPrivilegeType="NONE" dataCategory="DIMENSION" dimensionType="STANDARD" schemaVersion="3.0" outputViewType="Projection" cacheInvalidationPeriod="NONE" enforceSqlExecution="false">
+<descriptions defaultDescription="PRODUCTS"/>
+<localVariables/>
+<variableMappings/>
+<dataSources>
+  <DataSource id="S_PRODUCTS">
+    <resourceUri>S_PRODUCTS</resourceUri>
+  </DataSource>
+  <DataSource id="S_DEPARTMENTS">
+    <resourceUri>S_DEPARTMENTS</resourceUri>
+  </DataSource>
+  <DataSource id="S_AISLES">
+    <resourceUri>S_AISLES</resourceUri>
+  </DataSource>
+</dataSources>
+<calculationViews>
+  <calculationView xsi:type="Calculation:JoinView" id="Products_1" cardinality="CN_N" joinType="inner" multiJoinNode="Products" multiJoinCentralTable="S_PRODUCTS" multiJoinOrder="Outside In">
+    <viewAttributes>
+      <viewAttribute id="product_name"/>
+      <viewAttribute id="department"/>
+      <viewAttribute id="product_id"/>
+      <viewAttribute id="aisle_id"/>
+      <viewAttribute hidden="true" id="JOIN$department_id$department_id"/>
+    </viewAttributes>
+    <calculatedViewAttributes/>
+    <input node="S_PRODUCTS">
+      <mapping xsi:type="Calculation:AttributeMapping" target="product_name" source="product_name"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="product_id" source="product_id"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="aisle_id" source="aisle_id"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="JOIN$department_id$department_id" source="department_id"/>
+    </input>
+    <input node="S_DEPARTMENTS">
+      <mapping xsi:type="Calculation:AttributeMapping" target="department" source="department"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="JOIN$department_id$department_id" source="department_id"/>
+    </input>
+    <joinAttribute name="JOIN$department_id$department_id"/>
+  </calculationView>
+  <calculationView xsi:type="Calculation:JoinView" id="Products_2" cardinality="CN_N" joinType="inner" multiJoinNode="Products" multiJoinCentralTable="S_PRODUCTS" multiJoinOrder="Outside In">
+    <viewAttributes>
+      <viewAttribute id="product_name"/>
+      <viewAttribute id="aisle"/>
+      <viewAttribute id="department"/>
+      <viewAttribute id="product_id"/>
+      <viewAttribute hidden="true" id="JOIN$aisle_id$aisle_id"/>
+    </viewAttributes>
+    <calculatedViewAttributes/>
+    <input node="Products_1">
+      <mapping xsi:type="Calculation:AttributeMapping" target="product_name" source="product_name"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="department" source="department"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="product_id" source="product_id"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="JOIN$aisle_id$aisle_id" source="aisle_id"/>
+    </input>
+    <input node="S_AISLES">
+      <mapping xsi:type="Calculation:AttributeMapping" target="aisle" source="aisle"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="JOIN$aisle_id$aisle_id" source="aisle_id"/>
+    </input>
+    <joinAttribute name="JOIN$aisle_id$aisle_id"/>
+  </calculationView>
+</calculationViews>
+<logicalModel id="Products_2">
+  <attributes>
+    <attribute id="product_name" order="1" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="product_name"/>
+      <keyMapping columnObjectName="Products_2" columnName="product_name"/>
+    </attribute>
+    <attribute id="product_id" order="2" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="product_id"/>
+      <keyMapping columnObjectName="Products_2" columnName="product_id"/>
+    </attribute>
+    <attribute id="aisle" order="3" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="aisle"/>
+      <keyMapping columnObjectName="Products_2" columnName="aisle"/>
+    </attribute>
+    <attribute id="department" order="4" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="department"/>
+      <keyMapping columnObjectName="Products_2" columnName="department"/>
+    </attribute>
+  </attributes>
+  <calculatedAttributes/>
+  <baseMeasures/>
+  <calculatedMeasures/>
+  <restrictedMeasures/>
+</logicalModel>
+<layout>
+  <shapes>
+    <shape expanded="true" modelObjectName="Output" modelObjectNameSpace="MeasureGroup">
+      <upperLeftCorner x="40" y="85"/>
+    </shape>
+  
+    <shape expanded="true" modelObjectName="Products" modelObjectNameSpace="CalculationView">
+      <upperLeftCorner x="95" y="325"/>
+      <rectangleSize height="30" width="160"/>
+    </shape>
+    <shape modelObjectName="S_AISLES" modelObjectNameSpace="Products" modelObjectType="JoinNodeInput" multiJoinViewNodeName="Products">
+      <upperLeftCorner x="310" y="21"/>
+      <rectangleSize width="123"/>
+    </shape>
+    <shape modelObjectName="S_PRODUCTS" modelObjectNameSpace="Products" modelObjectType="JoinNodeInput" multiJoinViewNodeName="Products">
+      <upperLeftCorner x="17" y="35"/>
+      <rectangleSize width="156"/>
+    </shape>
+    <shape modelObjectName="S_DEPARTMENTS" modelObjectNameSpace="Products" modelObjectType="JoinNodeInput" multiJoinViewNodeName="Products">
+      <upperLeftCorner x="561" y="139"/>
+      <rectangleSize width="169"/>
+    </shape>
+  </shapes>
+</layout>
+</Calculation:scenario>

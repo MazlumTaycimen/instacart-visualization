@@ -1,0 +1,38 @@
+/*rebuy related*/
+FUNCTION "MOST_OFTEN_REORDERED"(IP_DEPARTMENT NVARCHAR(50), IP_AISLE NVARCHAR(50), IP_PRODUCT NVARCHAR(200) )
+       RETURNS table(PRODUCT_NAME NVARCHAR(200),
+       	ANZAHL INTEGER
+       )
+       LANGUAGE SQLSCRIPT 
+       SQL SECURITY INVOKER AS 
+BEGIN 
+
+
+IF :IP_AISLE = 'all'	THEN 
+	IP_AISLE = '%%';
+ELSE
+	IP_AISLE = IP_AISLE;
+END IF;
+
+IF :IP_DEPARTMENT = 'all'	THEN 
+	IP_DEPARTMENT = '%%';
+ELSE
+	IP_DEPARTMENT = IP_DEPARTMENT;
+END IF;
+
+IF :IP_PRODUCT = 'all'	THEN 
+	IP_PRODUCT = '%%';
+ELSE
+	IP_PRODUCT = IP_PRODUCT;
+END IF;
+
+return
+SELECT  TOP 10 "product_name" as PRODUCT_NAME, COUNT("reordered") as ANZAHL
+from "core.models::ORDERS"
+where "reordered" = 1 and "department" LIKE IP_DEPARTMENT and "aisle" LIKE IP_AISLE and "product_name" LIKE IP_PRODUCT 
+group by "product_name"
+ORDER BY ANZAHL DESC;
+
+
+
+END;

@@ -1,0 +1,6 @@
+service{
+"core.models::ORDERS_HOUR_OF_DAY"
+as "Orderhours"
+keys("HOUR_OF_DAY")
+parameters via entity "IP3";
+}

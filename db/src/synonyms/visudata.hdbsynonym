@@ -1,0 +1,32 @@
+{
+  "S_PRODUCTS": {
+    "target": {
+      "object": "PRODUCTS",
+      "schema": "VISUDATA"
+    }
+  },
+  "S_ORDERS": {
+    "target": {
+      "object": "ORDERS",
+      "schema": "VISUDATA"
+    }
+  },
+  "S_AISLES": {
+    "target": {
+      "object": "AISLES",
+      "schema": "VISUDATA"
+    }
+  },
+  "S_DEPARTMENTS": {
+    "target": {
+      "object": "DEPARTMENTS",
+      "schema": "VISUDATA"
+    }
+  },
+  "S_ORDER_PRODUCTS_PRIOR": {
+    "target": {
+      "object": "ORDER_PRODUCTS_PRIOR",
+      "schema": "VISUDATA"
+    }
+  }
+}

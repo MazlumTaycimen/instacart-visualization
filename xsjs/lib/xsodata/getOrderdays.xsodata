@@ -1,0 +1,6 @@
+service{
+"core.models::ORDERS_DAY_OF_WEEK"
+as "Orderdays"
+keys("DAY_OF_WEEK_ID")
+parameters via entity "IP4";
+}

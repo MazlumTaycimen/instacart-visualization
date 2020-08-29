@@ -1,0 +1,6 @@
+service{
+"core.models::DAYS_SINCE_PRIOR_ORDER"
+as "priororderset"
+keys("DAYS_SINCE_PRIOR_ORDER")
+parameters via entity "IP5";
+} 

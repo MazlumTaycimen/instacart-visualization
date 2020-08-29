@@ -1,0 +1,40 @@
+FUNCTION "PROBAILITY_REORDER_NUMBER_OF_ORDERS"(IP_DEPARTMENT NVARCHAR(50), IP_AISLE NVARCHAR(50), IP_PRODUCT NVARCHAR(200))
+       RETURNS table(PRODUCT_NAME NVARCHAR(200), ORDER_NUMBER INTEGER, REORDERS INTEGER, 
+       	PROBABILITY NUMERIC)
+       LANGUAGE SQLSCRIPT 
+       SQL SECURITY INVOKER AS 
+BEGIN 
+
+IF :IP_AISLE = 'all'	THEN 
+	IP_AISLE = '%%';
+ELSE
+	IP_AISLE = IP_AISLE;
+END IF;
+
+IF :IP_DEPARTMENT = 'all'	THEN 
+	IP_DEPARTMENT = '%%';
+ELSE
+	IP_DEPARTMENT = IP_DEPARTMENT;
+END IF;
+
+IF :IP_PRODUCT = 'all'	THEN 
+	IP_PRODUCT = '%%';
+ELSE
+	IP_PRODUCT = IP_PRODUCT;
+END IF;
+
+
+return
+Select PRODUCT_NAME, ORDER_NUMBER, REORDERS, PROBABILITY from (
+SELECT  "product_name" as PRODUCT_NAME, Count("product_name")  as ORDER_NUMBER,
+(SUM(Case When "reordered" = 1 then 1 else 0 End)) as REORDERS,
+((SUM(Case When "reordered" = 1 then 1 else 0 End)) / count(*)) as PROBABILITY 
+		
+from "core.models::ORDERS"
+WHERE "department" LIKE IP_DEPARTMENT and "aisle" LIKE IP_AISLE and "product_name" LIKE IP_PRODUCT 
+group by "product_name"
+order by ORDER_NUMBER ASC
+) 
+where REORDERS > 0 and REORDERS < 2000;
+
+END;

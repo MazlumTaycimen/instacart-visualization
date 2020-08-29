@@ -1,0 +1,6 @@
+service{
+"core.models::MOST_OFTEN_REORDERED"
+as "mostoftenreorderedSet"
+keys("ANZAHL")
+parameters via entity "IP6";
+} 

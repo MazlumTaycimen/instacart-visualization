@@ -1,0 +1,6 @@
+service{
+"core.models::FIRST_IN_CART_NUMBERS"
+as "firstincartSet"
+keys("ANZAHL")
+parameters via entity "IP8";
+} 

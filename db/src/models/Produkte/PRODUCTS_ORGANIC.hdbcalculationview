@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Calculation:scenario xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Calculation="http://www.sap.com/ndb/BiModelCalculation.ecore" xmlns:Variable="http://www.sap.com/ndb/BiModelVariable.ecore" id="core.models::PRODUCTS_ORGANIC" applyPrivilegeType="NONE" dataCategory="DIMENSION" dimensionType="STANDARD" schemaVersion="3.0" outputViewType="Projection" cacheInvalidationPeriod="NONE" enforceSqlExecution="false">
+<descriptions defaultDescription="PRODUCTS_ORGANIC"/>
+<localVariables>
+  <variable id="IP_DEPARTMENT" parameter="true">
+    <descriptions defaultDescription=" "/>
+    <variableProperties datatype="NVARCHAR" length="50">
+      <valueDomain type="empty"/>
+      <selection/>
+    </variableProperties>
+  </variable>
+  <variable id="IP_AISLE" parameter="true">
+    <descriptions defaultDescription=" "/>
+    <variableProperties datatype="NVARCHAR" length="50">
+      <valueDomain type="empty"/>
+      <selection/>
+    </variableProperties>
+  </variable>
+</localVariables>
+<variableMappings>
+  <mapping xsi:type="Variable:VariableMapping" dataSource="PRODUCTS_ORGANIC">
+    <targetVariable name="IP_DEPARTMENT" resourceUri="PRODUCTS_ORGANIC"/>
+    <localVariable>IP_DEPARTMENT</localVariable>
+  </mapping>
+  <mapping xsi:type="Variable:VariableMapping" dataSource="PRODUCTS_ORGANIC">
+    <targetVariable name="IP_AISLE" resourceUri="PRODUCTS_ORGANIC"/>
+    <localVariable>IP_AISLE</localVariable>
+  </mapping>
+</variableMappings>
+<dataSources>
+  <DataSource id="PRODUCTS_ORGANIC" type="TABLE_FUNCTION">
+    <resourceUri>PRODUCTS_ORGANIC</resourceUri>
+  </DataSource>
+</dataSources>
+<calculationViews/>
+<logicalModel id="PRODUCTS_ORGANIC">
+  <attributes>
+    <attribute id="ORGANIC" order="1" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="ORGANIC"/>
+      <keyMapping columnObjectName="PRODUCTS_ORGANIC" columnName="ORGANIC"/>
+    </attribute>
+    <attribute id="ANZAHL" order="2" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="ANZAHL"/>
+      <keyMapping columnObjectName="PRODUCTS_ORGANIC" columnName="ANZAHL"/>
+    </attribute>
+  </attributes>
+  <calculatedAttributes/>
+  <baseMeasures/>
+  <calculatedMeasures/>
+  <restrictedMeasures/>
+</logicalModel>
+<layout>
+  <shapes>
+    <shape expanded="true" modelObjectName="Output" modelObjectNameSpace="MeasureGroup">
+      <upperLeftCorner x="40" y="85"/>
+    </shape>
+  </shapes>
+</layout>
+</Calculation:scenario>

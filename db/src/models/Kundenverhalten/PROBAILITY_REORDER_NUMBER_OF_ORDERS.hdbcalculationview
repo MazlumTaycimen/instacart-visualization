@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Calculation:scenario xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Calculation="http://www.sap.com/ndb/BiModelCalculation.ecore" xmlns:Variable="http://www.sap.com/ndb/BiModelVariable.ecore" id="core.models::PROBAILITY_REORDER_NUMBER_OF_ORDERS" applyPrivilegeType="NONE" dataCategory="DIMENSION" dimensionType="STANDARD" schemaVersion="3.0" outputViewType="Projection" cacheInvalidationPeriod="NONE" enforceSqlExecution="false">
+<descriptions defaultDescription="PROBAILITY_REORDER_NUMBER_OF_ORDERS"/>
+<localVariables>
+  <variable id="IP_DEPARTMENT" parameter="true">
+    <descriptions defaultDescription=" "/>
+    <variableProperties datatype="NVARCHAR" length="50">
+      <valueDomain type="empty"/>
+      <selection/>
+    </variableProperties>
+  </variable>
+  <variable id="IP_AISLE" parameter="true">
+    <descriptions defaultDescription=" "/>
+    <variableProperties datatype="NVARCHAR" length="50">
+      <valueDomain type="empty"/>
+      <selection/>
+    </variableProperties>
+  </variable>
+  <variable id="IP_PRODUCT" parameter="true">
+    <descriptions defaultDescription=" "/>
+    <variableProperties datatype="NVARCHAR" length="200">
+      <valueDomain type="empty"/>
+      <selection/>
+    </variableProperties>
+  </variable>
+</localVariables>
+<variableMappings>
+  <mapping xsi:type="Variable:VariableMapping" dataSource="PROBAILITY_REORDER_NUMBER_OF_ORDERS">
+    <targetVariable name="IP_DEPARTMENT" resourceUri="PROBAILITY_REORDER_NUMBER_OF_ORDERS"/>
+    <localVariable>IP_DEPARTMENT</localVariable>
+  </mapping>
+  <mapping xsi:type="Variable:VariableMapping" dataSource="PROBAILITY_REORDER_NUMBER_OF_ORDERS">
+    <targetVariable name="IP_AISLE" resourceUri="PROBAILITY_REORDER_NUMBER_OF_ORDERS"/>
+    <localVariable>IP_AISLE</localVariable>
+  </mapping>
+  <mapping xsi:type="Variable:VariableMapping" dataSource="PROBAILITY_REORDER_NUMBER_OF_ORDERS">
+    <targetVariable name="IP_PRODUCT" resourceUri="PROBAILITY_REORDER_NUMBER_OF_ORDERS"/>
+    <localVariable>IP_PRODUCT</localVariable>
+  </mapping>
+</variableMappings>
+<dataSources>
+  <DataSource id="PROBAILITY_REORDER_NUMBER_OF_ORDERS" type="TABLE_FUNCTION">
+    <resourceUri>PROBAILITY_REORDER_NUMBER_OF_ORDERS</resourceUri>
+  </DataSource>
+</dataSources>
+<calculationViews/>
+<logicalModel id="PROBAILITY_REORDER_NUMBER_OF_ORDERS">
+  <attributes>
+    <attribute id="ORDER_NUMBER" order="1" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="ORDER_NUMBER"/>
+      <keyMapping columnObjectName="PROBAILITY_REORDER_NUMBER_OF_ORDERS" columnName="ORDER_NUMBER"/>
+    </attribute>
+    <attribute id="PROBABILITY" order="2" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PROBABILITY"/>
+      <keyMapping columnObjectName="PROBAILITY_REORDER_NUMBER_OF_ORDERS" columnName="PROBABILITY"/>
+    </attribute>
+    <attribute id="REORDERS" order="3" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="REORDERS"/>
+      <keyMapping columnObjectName="PROBAILITY_REORDER_NUMBER_OF_ORDERS" columnName="REORDERS"/>
+    </attribute>
+    <attribute id="PRODUCT_NAME" order="4" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PRODUCT_NAME"/>
+      <keyMapping columnObjectName="PROBAILITY_REORDER_NUMBER_OF_ORDERS" columnName="PRODUCT_NAME"/>
+    </attribute>
+  </attributes>
+  <calculatedAttributes/>
+  <baseMeasures/>
+  <calculatedMeasures/>
+  <restrictedMeasures/>
+</logicalModel>
+<layout>
+  <shapes>
+    <shape expanded="true" modelObjectName="Output" modelObjectNameSpace="MeasureGroup">
+      <upperLeftCorner x="40" y="85"/>
+    </shape>
+  </shapes>
+</layout>
+</Calculation:scenario>

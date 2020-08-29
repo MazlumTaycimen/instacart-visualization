@@ -1,0 +1,141 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns:html="http://www.w3.org/1999/xhtml" xmlns="sap.m" xmlns:viz="sap.viz.ui5.controls" xmlns:layout="sap.ui.layout" xmlns:viz.feeds="sap.viz.ui5.controls.common.feeds" xmlns:viz.data="sap.viz.ui5.data" controllerName="Z.Visualization.controller.Auswahl" displayBlock="true" height="100%">
+	<App id="idAppControl">
+		<pages>
+			<Page title="instacart dashboard">
+				<content>
+					<Bar id="bar1" enableFlexBox="true">
+						<contentLeft>
+							<HBox width="100%" id="hbox0_1593114721708" renderType="Bare">
+								<items>
+									<SearchField xmlns="sap.m" id="searchfield_aisles" width="100%" placeholder="all aisles" enableSuggestions="true" search=".onSearchaisles" suggest=".onSuggestaisles" suggestionItems="{ path: 'AislesModel>/aislesSet' }" visible="true" enabled="false">
+										<SuggestionItem text="{AislesModel>aisle}" key="{AislesModel>aisle}"/>
+									</SearchField>
+									<SearchField xmlns="sap.m" id="searchfield_departments" width="100%" placeholder="all departments" enableSuggestions="true" search=".onSearchdepartments" suggest=".onSuggestdepartments" suggestionItems="{ path: 'DepartmentsModel>/departmentsSet' }" visible="true" enabled="false">
+										<SuggestionItem text="{DepartmentsModel>department}" key="{DepartmentsModel>department}"/>
+									</SearchField>
+									<SearchField xmlns="sap.m" placeholder="all products" id="searchfield_products" enableSuggestions="true" search=".onSearchproducts" suggest=".onSuggestproducts" suggestionItems="{ path: 'ProductsModel>/productsSet' }" visible="true" enabled="false">
+										<SuggestionItem text="{ProductsModel>product_name}" key="{ProductsModel>product_name}"/>
+									</SearchField>
+									<Input xmlns="sap.m" id="input0" type="Number" enabled="false" visible="true" description="UserID"/>
+								</items>
+							</HBox>
+						</contentLeft>
+						<contentRight>
+							<Button xmlns="sap.m" text="set Filter" id="Button_Filter" icon="sap-icon://add-filter" press="onFilterPressed" type="Accept" visible="true" enabled="false"/>
+						</contentRight>
+					</Bar>
+					<IconTabBar selectedKey="user" id="bar0" expanded="false" headerMode="Inline" enableTabReordering="true" showOverflowSelectList="true" showSelection="false" select="onSelectCategory" backgroundDesign="Transparent" tabDensityMode="Compact" headerBackgroundDesign="Transparent">
+						<items>
+							<IconTabFilter text="products" id="filter0" iconColor="Contrast" key="products">
+								<content>
+									<sap.ui.layout:Grid xmlns:sap.ui.layout="sap.ui.layout" id="grid1" defaultSpan="XL6 L12 M12 S12">
+										<sap.ui.layout:content>
+											<viz:VizFrame id="Bar_chart_Top10Product" vizType="bar" width="100%" height="400px"/>
+											<viz:VizFrame id="Pie_chart_OrgVsNon" vizType="pie" width="100%" height="400px"/>
+										</sap.ui.layout:content>
+									</sap.ui.layout:Grid>
+								</content>
+							</IconTabFilter>
+							<IconTabFilter xmlns:mvc="sap.ui.core.mvc" xmlns:html="http://www.w3.org/1999/xhtml" xmlns="sap.m" text="item portfolio" id="filter1" iconColor="Contrast" key="item portfolio">
+								<content>
+									<FlexBox width="100%" id="box0">
+										<items>
+											<viz:VizFrame id="idVizFrame" height="770px" width="1250px" vizType="treemap">
+												<viz:dataset>
+													<viz.data:FlattenedDataset data="{/d/results}">
+														<viz.data:dimensions>
+															<viz.data:DimensionDefinition name="Department" value="{DEPARTMENT}"/>
+															<viz.data:DimensionDefinition name="Aisle" value="{AISLE}"/>
+														</viz.data:dimensions>
+														<viz.data:measures>
+															<viz.data:MeasureDefinition name="orders" value="{ANZAHL_ORDERS}"/>
+															<viz.data:MeasureDefinition name="ANZAHL_PRODUCTS" value="{ANZAHL_PRODUCTS}"/>
+														</viz.data:measures>
+													</viz.data:FlattenedDataset>
+												</viz:dataset>
+												<viz:feeds>
+													<viz.feeds:FeedItem uid="color" type="Measure" values="orders"/>
+													<viz.feeds:FeedItem uid="weight" type="Measure" values="orders"/>
+													<viz.feeds:FeedItem uid="title" type="Dimension" values="Department"/>
+													<viz.feeds:FeedItem uid="title" type="Dimension" values="Aisle"/>
+												</viz:feeds>
+											</viz:VizFrame>
+										</items>
+									</FlexBox>
+								</content>
+							</IconTabFilter>
+							<IconTabFilter xmlns:mvc="sap.ui.core.mvc" xmlns:html="http://www.w3.org/1999/xhtml" xmlns="sap.m" text="customer behaviour" id="filter2" key="customer behaviour">
+								<content>
+									<IconTabBar selectedKey="associations" id="tab_customerbehaviour" expanded="false" select="onSelectCategory" backgroundDesign="Transparent" headerBackgroundDesign="Transparent">
+										<items>
+											<IconTabFilter text="time related" id="filter0_1593109903467" key="time related">
+												<content>
+													<sap.ui.layout:Grid xmlns:sap.ui.layout="sap.ui.layout" id="grid0" defaultSpan="XL12 L12 M12 S12">
+														<sap.ui.layout:content>
+															<viz:VizFrame id="Bar_chart_orderhours" vizType="column" width="100%" height="325px"/>
+															<viz:VizFrame id="Bar_chart_orderdays" vizType="column" width="100%" height="325px"/>
+														</sap.ui.layout:content>
+													</sap.ui.layout:Grid>
+												</content>
+											</IconTabFilter>
+											<IconTabFilter text="rebuy related" iconColor="Neutral" id="filter1_1593109903467" key="rebuy related">
+												<content>
+													<layout:Grid id="grid0_1593298548346" defaultSpan="XL12 L12 M12 S12">
+														<layout:content>
+															<viz:VizFrame id="bar_chart_prior_order" vizType="column" width="100%" height="325px"/>
+															<HBox id="hbox0" renderType="Bare">
+																<items>
+																	<viz:VizFrame id="bar_chart_most_often" vizType="bar" width="100%" height="325px"/>
+																	<viz:VizFrame id="pie_chart_reorder" vizType="pie" width="100%" height="325px"/>
+																</items>
+															</HBox>
+														</layout:content>
+													</layout:Grid>
+												</content>
+											</IconTabFilter>
+											<IconTabFilter text="others" iconColor="Neutral" id="filter2_1593109903467" key="others">
+												<content>
+													<layout:Grid id="grid0_1593367848327" defaultSpan="XL12 L12 M12 S12">
+														<layout:content>
+															<viz:VizFrame id="bar_chart_first_in_cart" vizType="bar" width="100%" height="325px"/>
+														</layout:content>
+													</layout:Grid>
+												</content>
+											</IconTabFilter>
+											<IconTabFilter iconColor="Neutral" id="filter0_1594466221669" text="associations" key="associations"/>
+										</items>
+										<content>
+											<HBox width="100%" id="hbox_scatter"/>
+											<viz:VizFrame id="column_chart_asso2" vizType="column" width="100%" height="325px"/>
+										</content>
+									</IconTabBar>
+								</content>
+							</IconTabFilter>
+							<IconTabFilter xmlns:viz="sap.viz.ui5.controls" xmlns:layout="sap.ui.layout" xmlns:viz.feeds="sap.viz.ui5.controls.common.feeds" xmlns:viz.data="sap.viz.ui5.data" xmlns:mvc="sap.ui.core.mvc" xmlns:html="http://www.w3.org/1999/xhtml" xmlns="sap.m" text="user" id="user" iconColor="Contrast" key="user"/>
+						</items>
+						<content>
+							<Table headerText="orderinformations" items="{ path:'/results', sorter: { path: 'ORDER_ID', descending: true } }" id="table4">
+								<columns>
+									<Column mergeDuplicates="true">
+										<header>
+											<Text text="Order ID"/>
+										</header>
+									</Column>
+									<Column>
+										<header>
+											<Text text="Product"/>
+										</header>
+									</Column>
+								</columns>
+								<ColumnListItem>
+									<Text text="{ORDER_ID}"/>
+									<Text text="{PRODUCT_NAME}"/>
+								</ColumnListItem>
+							</Table>
+						</content>
+					</IconTabBar>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

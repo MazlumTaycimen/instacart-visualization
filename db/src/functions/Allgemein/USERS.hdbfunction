@@ -1,0 +1,11 @@
+FUNCTION "USERS"( )
+       RETURNS table(USER_ID NVARCHAR(50)) 
+       LANGUAGE SQLSCRIPT 
+       SQL SECURITY INVOKER AS 
+BEGIN 
+
+
+return 
+select "user_id" as USER_ID from "core.models::ORDERS"
+group by "user_id";
+END;

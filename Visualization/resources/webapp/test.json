@@ -1,0 +1,1211 @@
+{
+	"d": {
+		"results": [{
+			"__metadata": {
+				"uri": "https://hxehost:51026/xsodata/getportfolio.xsodata/portfolioSet('alcohol')",
+				"type": "default.portfolioSetType"
+			},
+			"ANZAHL_PRODUCTS": 385,
+			"ANZAHL_ORDERS": 48657,
+			"DEPARTMENT": "alcohol",
+			"AISLE": "beers coolers"
+		}, {
+			"__metadata": {
+				"uri": "https://hxehost:51026/xsodata/getportfolio.xsodata/portfolioSet('alcohol')",
+				"type": "default.portfolioSetType"
+			},
+			"ANZAHL_PRODUCTS": 95,
+			"ANZAHL_ORDERS": 11198,
+			"DEPARTMENT": "alcohol",
+			"AISLE": "specialty wines champagnes"
+		}, {
+			"__metadata": {
+				"uri": "https://hxehost:51026/xsodata/getportfolio.xsodata/portfolioSet('alcohol')",
+				"type": "default.portfolioSetType"
+			},
+			"ANZAHL_PRODUCTS": 232,
+			"ANZAHL_ORDERS": 35181,
+			"DEPARTMENT": "alcohol",
+			"AISLE": "red wines"
+		}, {
+			"__metadata": {
+				"uri": "https://hxehost:51026/xsodata/getportfolio.xsodata/portfolioSet('alcohol')",
+				"type": "default.portfolioSetType"
+			},
+			"ANZAHL_PRODUCTS": 195,
+			"ANZAHL_ORDERS": 28102,
+			"DEPARTMENT": "alcohol",
+			"AISLE": "spirits"
+		}, {
+			"__metadata": {
+				"uri": "https://hxehost:51026/xsodata/getportfolio.xsodata/portfolioSet('alcohol')",
+				"type": "default.portfolioSetType"
+			},
+			"ANZAHL_PRODUCTS": 147,
+			"ANZAHL_ORDERS": 30558,
+			"DEPARTMENT": "alcohol",
+			"AISLE": "white wines"
+		}, {
+			"__metadata": {
+				"uri": "https://hxehost:51026/xsodata/getportfolio.xsodata/portfolioSet('babies')",
+				"type": "default.portfolioSetType"
+			},
+			"ANZAHL_PRODUCTS": 187,
+			"ANZAHL_ORDERS": 24605,
+			"DEPARTMENT": "babies",
+			"AISLE": "diapers wipes"
+		}, {
+			"__metadata": {
+				"uri": "https://hxehost:51026/xsodata/getportfolio.xsodata/portfolioSet('babies')",
+				"type": "default.portfolioSetType"
+			},
+			"ANZAHL_PRODUCTS": 44,
+			"ANZAHL_ORDERS": 8160,
+			"DEPARTMENT": "babies",
+			"AISLE": "baby accessories"
+		}, {
+			"__metadata": {
+				"uri": "https://hxehost:51026/xsodata/getportfolio.xsodata/portfolioSet('babies')",
+				"type": "default.portfolioSetType"
+			},
+			"ANZAHL_PRODUCTS": 132,
+			"ANZAHL_ORDERS": 8581,
+			"DEPARTMENT": "babies",
+			"AISLE": "baby bath body care"
+		}, {
+			"__metadata": {
+				"uri": "https://hxehost:51026/xsodata/getportfolio.xsodata/portfolioSet('babies')",
+				"type": "default.portfolioSetType"
+			},
+			"ANZAHL_PRODUCTS": 718,
+			"ANZAHL_ORDERS": 382456,
+			"DEPARTMENT": "babies",
+			"AISLE": "baby food formula"
+		}, {
+			"__metadata": {
+				"uri": "https://hxehost:51026/xsodata/getportfolio.xsodata/portfolioSet('bakery')",
+				"type": "default.portfolioSetType"
+			},
+			"ANZAHL_PRODUCTS": 226,
+			"ANZAHL_ORDERS": 250770,
+			"DEPARTMENT": "bakery",
+			"AISLE": "breakfast bakery"
+		}, {
+			"__metadata": {
+				"uri": "https://hxehost:51026/xsodata/getportfolio.xsodata/portfolioSet('bakery')",
+				"type": "default.portfolioSetType"
+			},
+			"ANZAHL_PRODUCTS": 557,
+			"ANZAHL_ORDERS": 584834,
+			"DEPARTMENT": "bakery",
+			"AISLE": "bread"
+		}, {
+			"__metadata": {
+				"uri": "https://hxehost:51026/xsodata/getportfolio.xsodata/portfolioSet('bakery')",
+				"type": "default.portfolioSetType"
+			},
+			"ANZAHL_PRODUCTS": 241,
+			"ANZAHL_ORDERS": 193297,
+			"DEPARTMENT": "bakery",
+			"AISLE": "tortillas flat bread"
+		}, {
+			"__metadata": {
+				"uri": "https://hxehost:51026/xsodata/getportfolio.xsodata/portfolioSet('bakery')",
+				"type": "default.portfolioSetType"
+			},
+			"ANZAHL_PRODUCTS": 195,
+			"ANZAHL_ORDERS": 113015,
+			"DEPARTMENT": "bakery",
+			"AISLE": "buns rolls"
+		}, {
+			"__metadata": {
+				"uri": "https://hxehost:51026/xsodata/getportfolio.xsodata/portfolioSet('bakery')",
+				"type": "default.portfolioSetType"
+			},
+			"ANZAHL_PRODUCTS": 297,
+			"ANZAHL_ORDERS": 34871,
+			"DEPARTMENT": "bakery",
+			"AISLE": "bakery desserts"
+		}, {
+			"__metadata": {
+				"uri": "https://hxehost:51026/xsodata/getportfolio.xsodata/portfolioSet('beverages')",
+				"type": "default.portfolioSetType"
+			},
+			"ANZAHL_PRODUCTS": 294,
+			"ANZAHL_ORDERS": 103615,
+			"DEPARTMENT": "beverages",
+			"AISLE": "energy sports drinks"
+		}, {
+			"__metadata": {
+				"uri": "https://hxehost:51026/xsodata/getportfolio.xsodata/portfolioSet('beverages')",
+				"type": "default.portfolioSetType"
+			},
+			"ANZAHL_PRODUCTS": 344,
+			"ANZAHL_ORDERS": 841533,
+			"DEPARTMENT": "beverages",
+			"AISLE": "water seltzer sparkling water"
+		}, {
+			"__metadata": {
+				"uri": "https://hxehost:51026/xsodata/getportfolio.xsodata/portfolioSet('beverages')",
+				"type": "default.portfolioSetType"
+			},
+			"ANZAHL_PRODUCTS": 462,
+			"ANZAHL_ORDERS": 357267,
+			"DEPARTMENT": "beverages",
+			"AISLE": "soft drinks"
+		}, {
+			"__metadata": {
+				"uri": "https://hxehost:51026/xsodata/getportfolio.xsodata/portfolioSet('beverages')",
+				"type": "default.portfolioSetType"
+			},
+			"ANZAHL_PRODUCTS": 223,
+			"ANZAHL_ORDERS": 21214,
+			"DEPARTMENT": "beverages",
+			"AISLE": "cocoa drink mixes"
+		}, {
+			"__metadata": {
+				"uri": "https://hxehost:51026/xsodata/getportfolio.xsodata/portfolioSet('beverages')",
+				"type": "default.portfolioSetType"
+			},
+			"ANZAHL_PRODUCTS": 673,
+			"ANZAHL_ORDERS": 575881,
+			"DEPARTMENT": "beverages",
+			"AISLE": "refrigerated"
+		}, {
+			"__metadata": {
+				"uri": "https://hxehost:51026/xsodata/getportfolio.xsodata/portfolioSet('beverages')",
+				"type": "default.portfolioSetType"
+			},
+			"ANZAHL_PRODUCTS": 680,
+			"ANZAHL_ORDERS": 207075,
+			"DEPARTMENT": "beverages",
+			"AISLE": "coffee"
+		}, {
+			"__metadata": {
+				"uri": "https://hxehost:51026/xsodata/getportfolio.xsodata/portfolioSet('beverages')",
+				"type": "default.portfolioSetType"
+			},
+			"ANZAHL_PRODUCTS": 792,
+			"ANZAHL_ORDERS": 333933,
+			"DEPARTMENT": "beverages",
+			"AISLE": "juice nectars"
+		}, {
+			"__metadata": {
+				"uri": "https://hxehost:51026/xsodata/getportfolio.xsodata/portfolioSet('beverages')",
+				"type": "default.portfolioSetType"
+			},
+			"ANZAHL_PRODUCTS": 894,
+			"ANZAHL_ORDERS": 249341,
+			"DEPARTMENT": "beverages",
+			"AISLE": "tea"
+		}, {
+			"__metadata": {
+				"uri": "https://hxehost:51026/xsodata/getportfolio.xsodata/portfolioSet('breakfast')",
+				"type": "default.portfolioSetType"
+			},
+			"ANZAHL_PRODUCTS": 173,
+			"ANZAHL_ORDERS": 71860,
+			"DEPARTMENT": "breakfast",
+			"AISLE": "breakfast bars pastries"
+		}, {
+			"__metadata": {
+				"uri": "https://hxehost:51026/xsodata/getportfolio.xsodata/portfolioSet('breakfast')",
+				"type": "default.portfolioSetType"
+			},
+			"ANZAHL_PRODUCTS": 454,
+			"ANZAHL_ORDERS": 377586,
+			"DEPARTMENT": "breakfast",
+			"AISLE": "cereal"
+		}, {
+			"__metadata": {
+				"uri": "https://hxehost:51026/xsodata/getportfolio.xsodata/portfolioSet('breakfast')",
+				"type": "default.portfolioSetType"
+			},
+			"ANZAHL_PRODUCTS": 303,
+			"ANZAHL_ORDERS": 158164,
+			"DEPARTMENT": "breakfast",
+			"AISLE": "hot cereal pancake mixes"
+		}, {
+			"__metadata": {
+				"uri": "https://hxehost:51026/xsodata/getportfolio.xsodata/portfolioSet('breakfast')",
+				"type": "default.portfolioSetType"
+			},
+			"ANZAHL_PRODUCTS": 184,
+			"ANZAHL_ORDERS": 101959,
+			"DEPARTMENT": "breakfast",
+			"AISLE": "granola"
+		}, {
+			"__metadata": {
+				"uri": "https://hxehost:51026/xsodata/getportfolio.xsodata/portfolioSet('bulk')",
+				"type": "default.portfolioSetType"
+			},
+			"ANZAHL_PRODUCTS": 26,
+			"ANZAHL_ORDERS": 17205,
+			"DEPARTMENT": "bulk",
+			"AISLE": "bulk grains rice dried goods"
+		}, {
+			"__metadata": {
+				"uri": "https://hxehost:51026/xsodata/getportfolio.xsodata/portfolioSet('bulk')",
+				"type": "default.portfolioSetType"
+			},
+			"ANZAHL_PRODUCTS": 12,
+			"ANZAHL_ORDERS": 17368,
+			"DEPARTMENT": "bulk",
+			"AISLE": "bulk dried fruits vegetables"
+		}, {
+			"__metadata": {
+				"uri": "https://hxehost:51026/xsodata/getportfolio.xsodata/portfolioSet('canned%20goods')",
+				"type": "default.portfolioSetType"
+			},
+			"ANZAHL_PRODUCTS": 283,
+			"ANZAHL_ORDERS": 67046,
+			"DEPARTMENT": "canned goods",
+			"AISLE": "canned meat seafood"
+		}, {
+			"__metadata": {
+				"uri": "https://hxehost:51026/xsodata/getportfolio.xsodata/portfolioSet('canned%20goods')",
+				"type": "default.portfolioSetType"
+			},
+			"ANZAHL_PRODUCTS": 342,
+			"ANZAHL_ORDERS": 270314,
+			"DEPARTMENT": "canned goods",
+			"AISLE": "canned meals beans"
+		}, {
+			"__metadata": {
+				"uri": "https://hxehost:51026/xsodata/getportfolio.xsodata/portfolioSet('canned%20goods')",
+				"type": "default.portfolioSetType"
+			},
+			"ANZAHL_PRODUCTS": 487,
+			"ANZAHL_ORDERS": 297037,
+			"DEPARTMENT": "canned goods",
+			"AISLE": "canned jarred vegetables"
+		}, {
+			"__metadata": {
+				"uri": "https://hxehost:51026/xsodata/getportfolio.xsodata/portfolioSet('canned%20goods')",
+				"type": "default.portfolioSetType"
+			},
+			"ANZAHL_PRODUCTS": 243,
+			"ANZAHL_ORDERS": 87197,
+			"DEPARTMENT": "canned goods",
+			"AISLE": "canned fruit applesauce"
+		}, {
+			"__metadata": {
+				"uri": "https://hxehost:51026/xsodata/getportfolio.xsodata/portfolioSet('canned%20goods')",
+				"type": "default.portfolioSetType"
+			},
+			"ANZAHL_PRODUCTS": 737,
+			"ANZAHL_ORDERS": 346464,
+			"DEPARTMENT": "canned goods",
+			"AISLE": "soup broth bouillon"
+		}, {
+			"__metadata": {
+				"uri": "https://hxehost:51026/xsodata/getportfolio.xsodata/portfolioSet('dairy%20eggs')",
+				"type": "default.portfolioSetType"
+			},
+			"ANZAHL_PRODUCTS": 1026,
+			"ANZAHL_ORDERS": 1452343,
+			"DEPARTMENT": "dairy eggs",
+			"AISLE": "yogurt"
+		}, {
+			"__metadata": {
+				"uri": "https://hxehost:51026/xsodata/getportfolio.xsodata/portfolioSet('dairy%20eggs')",
+				"type": "default.portfolioSetType"
+			},
+			"ANZAHL_PRODUCTS": 191,
+			"ANZAHL_ORDERS": 308007,
+			"DEPARTMENT": "dairy eggs",
+			"AISLE": "other creams cheeses"
+		}, {
+			"__metadata": {
+				"uri": "https://hxehost:51026/xsodata/getportfolio.xsodata/portfolioSet('dairy%20eggs')",
+				"type": "default.portfolioSetType"
+			},
+			"ANZAHL_PRODUCTS": 150,
+			"ANZAHL_ORDERS": 254317,
+			"DEPARTMENT": "dairy eggs",
+			"AISLE": "butter"
+		}, {
+			"__metadata": {
+				"uri": "https://hxehost:51026/xsodata/getportfolio.xsodata/portfolioSet('dairy%20eggs')",
+				"type": "default.portfolioSetType"
+			},
+			"ANZAHL_PRODUCTS": 161,
+			"ANZAHL_ORDERS": 318002,
+			"DEPARTMENT": "dairy eggs",
+			"AISLE": "cream"
+		}, {
+			"__metadata": {
+				"uri": "https://hxehost:51026/xsodata/getportfolio.xsodata/portfolioSet('dairy%20eggs')",
+				"type": "default.portfolioSetType"
+			},
+			"ANZAHL_PRODUCTS": 98,
+			"ANZAHL_ORDERS": 37691,
+			"DEPARTMENT": "dairy eggs",
+			"AISLE": "refrigerated pudding desserts"
+		}, {
+			"__metadata": {
+				"uri": "https://hxehost:51026/xsodata/getportfolio.xsodata/portfolioSet('dairy%20eggs')",
+				"type": "default.portfolioSetType"
+			},
+			"ANZAHL_PRODUCTS": 293,
+			"ANZAHL_ORDERS": 638253,
+			"DEPARTMENT": "dairy eggs",
+			"AISLE": "soy lactosefree"
+		}, {
+			"__metadata": {
+				"uri": "https://hxehost:51026/xsodata/getportfolio.xsodata/portfolioSet('dairy%20eggs')",
+				"type": "default.portfolioSetType"
+			},
+			"ANZAHL_PRODUCTS": 125,
+			"ANZAHL_ORDERS": 452134,
+			"DEPARTMENT": "dairy eggs",
+			"AISLE": "eggs"
+		}, {
+			"__metadata": {
+				"uri": "https://hxehost:51026/xsodata/getportfolio.xsodata/portfolioSet('dairy%20eggs')",
+				"type": "default.portfolioSetType"
+			},
+			"ANZAHL_PRODUCTS": 890,
+			"ANZAHL_ORDERS": 979763,
+			"DEPARTMENT": "dairy eggs",
+			"AISLE": "packaged cheese"
+		}, {
+			"__metadata": {
+				"uri": "https://hxehost:51026/xsodata/getportfolio.xsodata/portfolioSet('dairy%20eggs')",
+				"type": "default.portfolioSetType"
+			},
+			"ANZAHL_PRODUCTS": 243,
+			"ANZAHL_ORDERS": 891015,
+			"DEPARTMENT": "dairy eggs",
+			"AISLE": "milk"
+		}, {
+			"__metadata": {
+				"uri": "https://hxehost:51026/xsodata/getportfolio.xsodata/portfolioSet('dairy%20eggs')",
+				"type": "default.portfolioSetType"
+			},
+			"ANZAHL_PRODUCTS": 271,
+			"ANZAHL_ORDERS": 82491,
+			"DEPARTMENT": "dairy eggs",
+			"AISLE": "specialty cheeses"
+		}, {
+			"__metadata": {
+				"uri": "https://hxehost:51026/xsodata/getportfolio.xsodata/portfolioSet('deli')",
+				"type": "default.portfolioSetType"
+			},
+			"ANZAHL_PRODUCTS": 373,
+			"ANZAHL_ORDERS": 395130,
+			"DEPARTMENT": "deli",
+			"AISLE": "lunch meat"
+		}, {
+			"__metadata": {
+				"uri": "https://hxehost:51026/xsodata/getportfolio.xsodata/portfolioSet('deli')",
+				"type": "default.portfolioSetType"
+			},
+			"ANZAHL_PRODUCTS": 327,
+			"ANZAHL_ORDERS": 355685,
+			"DEPARTMENT": "deli",
+			"AISLE": "fresh dips tapenades"
+		}, {
+			"__metadata": {
+				"uri": "https://hxehost:51026/xsodata/getportfolio.xsodata/portfolioSet('deli')",
+				"type": "default.portfolioSetType"
+			},
+			"ANZAHL_PRODUCTS": 146,
+			"ANZAHL_ORDERS": 71928,
+			"DEPARTMENT": "deli",
+			"AISLE": "prepared soups salads"
+		}, {
+			"__metadata": {
+				"uri": "https://hxehost:51026/xsodata/getportfolio.xsodata/portfolioSet('deli')",
+				"type": "default.portfolioSetType"
+			},
+			"ANZAHL_PRODUCTS": 159,
+			"ANZAHL_ORDERS": 129474,
+			"DEPARTMENT": "deli",
+			"AISLE": "tofu meat alternatives"
+		}, {
+			"__metadata": {
+				"uri": "https://hxehost:51026/xsodata/getportfolio.xsodata/portfolioSet('deli')",
+				"type": "default.portfolioSetType"
+			},
+			"ANZAHL_PRODUCTS": 317,
+			"ANZAHL_ORDERS": 99032,
+			"DEPARTMENT": "deli",
+			"AISLE": "prepared meals"
+		}, {
+			"__metadata": {
+				"uri": "https://hxehost:51026/xsodata/getportfolio.xsodata/portfolioSet('dry%20goods%20pasta')",
+				"type": "default.portfolioSetType"
+			},
+			"ANZAHL_PRODUCTS": 398,
+			"ANZAHL_ORDERS": 218337,
+			"DEPARTMENT": "dry goods pasta",
+			"AISLE": "pasta sauce"
+		}, {
+			"__metadata": {
+				"uri": "https://hxehost:51026/xsodata/getportfolio.xsodata/portfolioSet('dry%20goods%20pasta')",
+				"type": "default.portfolioSetType"
+			},
+			"ANZAHL_PRODUCTS": 457,
+			"ANZAHL_ORDERS": 266637,
+			"DEPARTMENT": "dry goods pasta",
+			"AISLE": "dry pasta"
+		}, {
+			"__metadata": {
+				"uri": "https://hxehost:51026/xsodata/getportfolio.xsodata/portfolioSet('dry%20goods%20pasta')",
+				"type": "default.portfolioSetType"
+			},
+			"ANZAHL_PRODUCTS": 123,
+			"ANZAHL_ORDERS": 36727,
+			"DEPARTMENT": "dry goods pasta",
+			"AISLE": "fresh pasta"
+		}, {
+			"__metadata": {
+				"uri": "https://hxehost:51026/xsodata/getportfolio.xsodata/portfolioSet('dry%20goods%20pasta')",
+				"type": "default.portfolioSetType"
+			},
+			"ANZAHL_PRODUCTS": 543,
+			"ANZAHL_ORDERS": 200687,
+			"DEPARTMENT": "dry goods pasta",
+			"AISLE": "instant foods"
+		}, {
+			"__metadata": {
+				"uri": "https://hxehost:51026/xsodata/getportfolio.xsodata/portfolioSet('dry%20goods%20pasta')",
+				"type": "default.portfolioSetType"
+			},
+			"ANZAHL_PRODUCTS": 336,
+			"ANZAHL_ORDERS": 144189,
+			"DEPARTMENT": "dry goods pasta",
+			"AISLE": "grains rice dried goods"
+		}, {
+			"__metadata": {
+				"uri": "https://hxehost:51026/xsodata/getportfolio.xsodata/portfolioSet('frozen')",
+				"type": "default.portfolioSetType"
+			},
+			"ANZAHL_PRODUCTS": 112,
+			"ANZAHL_ORDERS": 19319,
+			"DEPARTMENT": "frozen",
+			"AISLE": "frozen dessert"
+		}, {
+			"__metadata": {
+				"uri": "https://hxehost:51026/xsodata/getportfolio.xsodata/portfolioSet('frozen')",
+				"type": "default.portfolioSetType"
+			},
+			"ANZAHL_PRODUCTS": 189,
+			"ANZAHL_ORDERS": 99369,
+			"DEPARTMENT": "frozen",
+			"AISLE": "frozen vegan vegetarian"
+		}, {
+			"__metadata": {
+				"uri": "https://hxehost:51026/xsodata/getportfolio.xsodata/portfolioSet('frozen')",
+				"type": "default.portfolioSetType"
+			},
+			"ANZAHL_PRODUCTS": 81,
+			"ANZAHL_ORDERS": 40208,
+			"DEPARTMENT": "frozen",
+			"AISLE": "frozen breads doughs"
+		}, {
+			"__metadata": {
+				"uri": "https://hxehost:51026/xsodata/getportfolio.xsodata/portfolioSet('frozen')",
+				"type": "default.portfolioSetType"
+			},
+			"ANZAHL_PRODUCTS": 1091,
+			"ANZAHL_ORDERS": 498425,
+			"DEPARTMENT": "frozen",
+			"AISLE": "ice cream ice"
+		}, {
+			"__metadata": {
+				"uri": "https://hxehost:51026/xsodata/getportfolio.xsodata/portfolioSet('frozen')",
+				"type": "default.portfolioSetType"
+			},
+			"ANZAHL_PRODUCTS": 229,
+			"ANZAHL_ORDERS": 71742,
+			"DEPARTMENT": "frozen",
+			"AISLE": "frozen meat seafood"
+		}, {
+			"__metadata": {
+				"uri": "https://hxehost:51026/xsodata/getportfolio.xsodata/portfolioSet('frozen')",
+				"type": "default.portfolioSetType"
+			},
+			"ANZAHL_PRODUCTS": 47,
+			"ANZAHL_ORDERS": 4853,
+			"DEPARTMENT": "frozen",
+			"AISLE": "frozen juice"
+		}, {
+			"__metadata": {
+				"uri": "https://hxehost:51026/xsodata/getportfolio.xsodata/portfolioSet('frozen')",
+				"type": "default.portfolioSetType"
+			},
+			"ANZAHL_PRODUCTS": 880,
+			"ANZAHL_ORDERS": 390299,
+			"DEPARTMENT": "frozen",
+			"AISLE": "frozen meals"
+		}, {
+			"__metadata": {
+				"uri": "https://hxehost:51026/xsodata/getportfolio.xsodata/portfolioSet('frozen')",
+				"type": "default.portfolioSetType"
+			},
+			"ANZAHL_PRODUCTS": 361,
+			"ANZAHL_ORDERS": 522654,
+			"DEPARTMENT": "frozen",
+			"AISLE": "frozen produce"
+		}, {
+			"__metadata": {
+				"uri": "https://hxehost:51026/xsodata/getportfolio.xsodata/portfolioSet('frozen')",
+				"type": "default.portfolioSetType"
+			},
+			"ANZAHL_PRODUCTS": 335,
+			"ANZAHL_ORDERS": 162218,
+			"DEPARTMENT": "frozen",
+			"AISLE": "frozen pizza"
+		}, {
+			"__metadata": {
+				"uri": "https://hxehost:51026/xsodata/getportfolio.xsodata/portfolioSet('frozen')",
+				"type": "default.portfolioSetType"
+			},
+			"ANZAHL_PRODUCTS": 386,
+			"ANZAHL_ORDERS": 194582,
+			"DEPARTMENT": "frozen",
+			"AISLE": "frozen appetizers sides"
+		}, {
+			"__metadata": {
+				"uri": "https://hxehost:51026/xsodata/getportfolio.xsodata/portfolioSet('frozen')",
+				"type": "default.portfolioSetType"
+			},
+			"ANZAHL_PRODUCTS": 296,
+			"ANZAHL_ORDERS": 232763,
+			"DEPARTMENT": "frozen",
+			"AISLE": "frozen breakfast"
+		}, {
+			"__metadata": {
+				"uri": "https://hxehost:51026/xsodata/getportfolio.xsodata/portfolioSet('household')",
+				"type": "default.portfolioSetType"
+			},
+			"ANZAHL_PRODUCTS": 204,
+			"ANZAHL_ORDERS": 94927,
+			"DEPARTMENT": "household",
+			"AISLE": "dish detergents"
+		}, {
+			"__metadata": {
+				"uri": "https://hxehost:51026/xsodata/getportfolio.xsodata/portfolioSet('household')",
+				"type": "default.portfolioSetType"
+			},
+			"ANZAHL_PRODUCTS": 505,
+			"ANZAHL_ORDERS": 94354,
+			"DEPARTMENT": "household",
+			"AISLE": "laundry"
+		}, {
+			"__metadata": {
+				"uri": "https://hxehost:51026/xsodata/getportfolio.xsodata/portfolioSet('household')",
+				"type": "default.portfolioSetType"
+			},
+			"ANZAHL_PRODUCTS": 218,
+			"ANZAHL_ORDERS": 9172,
+			"DEPARTMENT": "household",
+			"AISLE": "kitchen supplies"
+		}, {
+			"__metadata": {
+				"uri": "https://hxehost:51026/xsodata/getportfolio.xsodata/portfolioSet('household')",
+				"type": "default.portfolioSetType"
+			},
+			"ANZAHL_PRODUCTS": 112,
+			"ANZAHL_ORDERS": 32081,
+			"DEPARTMENT": "household",
+			"AISLE": "trash bags liners"
+		}, {
+			"__metadata": {
+				"uri": "https://hxehost:51026/xsodata/getportfolio.xsodata/portfolioSet('household')",
+				"type": "default.portfolioSetType"
+			},
+			"ANZAHL_PRODUCTS": 354,
+			"ANZAHL_ORDERS": 19851,
+			"DEPARTMENT": "household",
+			"AISLE": "air fresheners candles"
+		}, {
+			"__metadata": {
+				"uri": "https://hxehost:51026/xsodata/getportfolio.xsodata/portfolioSet('household')",
+				"type": "default.portfolioSetType"
+			},
+			"ANZAHL_PRODUCTS": 206,
+			"ANZAHL_ORDERS": 65946,
+			"DEPARTMENT": "household",
+			"AISLE": "food storage"
+		}, {
+			"__metadata": {
+				"uri": "https://hxehost:51026/xsodata/getportfolio.xsodata/portfolioSet('household')",
+				"type": "default.portfolioSetType"
+			},
+			"ANZAHL_PRODUCTS": 199,
+			"ANZAHL_ORDERS": 43348,
+			"DEPARTMENT": "household",
+			"AISLE": "plates bowls cups flatware"
+		}, {
+			"__metadata": {
+				"uri": "https://hxehost:51026/xsodata/getportfolio.xsodata/portfolioSet('household')",
+				"type": "default.portfolioSetType"
+			},
+			"ANZAHL_PRODUCTS": 655,
+			"ANZAHL_ORDERS": 118477,
+			"DEPARTMENT": "household",
+			"AISLE": "cleaning products"
+		}, {
+			"__metadata": {
+				"uri": "https://hxehost:51026/xsodata/getportfolio.xsodata/portfolioSet('household')",
+				"type": "default.portfolioSetType"
+			},
+			"ANZAHL_PRODUCTS": 322,
+			"ANZAHL_ORDERS": 242996,
+			"DEPARTMENT": "household",
+			"AISLE": "paper goods"
+		}, {
+			"__metadata": {
+				"uri": "https://hxehost:51026/xsodata/getportfolio.xsodata/portfolioSet('household')",
+				"type": "default.portfolioSetType"
+			},
+			"ANZAHL_PRODUCTS": 308,
+			"ANZAHL_ORDERS": 17514,
+			"DEPARTMENT": "household",
+			"AISLE": "more household"
+		}, {
+			"__metadata": {
+				"uri": "https://hxehost:51026/xsodata/getportfolio.xsodata/portfolioSet('international')",
+				"type": "default.portfolioSetType"
+			},
+			"ANZAHL_PRODUCTS": 108,
+			"ANZAHL_ORDERS": 15901,
+			"DEPARTMENT": "international",
+			"AISLE": "indian foods"
+		}, {
+			"__metadata": {
+				"uri": "https://hxehost:51026/xsodata/getportfolio.xsodata/portfolioSet('international')",
+				"type": "default.portfolioSetType"
+			},
+			"ANZAHL_PRODUCTS": 169,
+			"ANZAHL_ORDERS": 11798,
+			"DEPARTMENT": "international",
+			"AISLE": "kosher foods"
+		}, {
+			"__metadata": {
+				"uri": "https://hxehost:51026/xsodata/getportfolio.xsodata/portfolioSet('international')",
+				"type": "default.portfolioSetType"
+			},
+			"ANZAHL_PRODUCTS": 257,
+			"ANZAHL_ORDERS": 74947,
+			"DEPARTMENT": "international",
+			"AISLE": "latino foods"
+		}, {
+			"__metadata": {
+				"uri": "https://hxehost:51026/xsodata/getportfolio.xsodata/portfolioSet('international')",
+				"type": "default.portfolioSetType"
+			},
+			"ANZAHL_PRODUCTS": 605,
+			"ANZAHL_ORDERS": 166607,
+			"DEPARTMENT": "international",
+			"AISLE": "asian foods"
+		}, {
+			"__metadata": {
+				"uri": "https://hxehost:51026/xsodata/getportfolio.xsodata/portfolioSet('meat%20seafood')",
+				"type": "default.portfolioSetType"
+			},
+			"ANZAHL_PRODUCTS": 100,
+			"ANZAHL_ORDERS": 33865,
+			"DEPARTMENT": "meat seafood",
+			"AISLE": "packaged meat"
+		}, {
+			"__metadata": {
+				"uri": "https://hxehost:51026/xsodata/getportfolio.xsodata/portfolioSet('meat%20seafood')",
+				"type": "default.portfolioSetType"
+			},
+			"ANZAHL_PRODUCTS": 387,
+			"ANZAHL_ORDERS": 305655,
+			"DEPARTMENT": "meat seafood",
+			"AISLE": "hot dogs bacon sausage"
+		}, {
+			"__metadata": {
+				"uri": "https://hxehost:51026/xsodata/getportfolio.xsodata/portfolioSet('meat%20seafood')",
+				"type": "default.portfolioSetType"
+			},
+			"ANZAHL_PRODUCTS": 105,
+			"ANZAHL_ORDERS": 70887,
+			"DEPARTMENT": "meat seafood",
+			"AISLE": "meat counter"
+		}, {
+			"__metadata": {
+				"uri": "https://hxehost:51026/xsodata/getportfolio.xsodata/portfolioSet('meat%20seafood')",
+				"type": "default.portfolioSetType"
+			},
+			"ANZAHL_PRODUCTS": 99,
+			"ANZAHL_ORDERS": 118437,
+			"DEPARTMENT": "meat seafood",
+			"AISLE": "packaged poultry"
+		}, {
+			"__metadata": {
+				"uri": "https://hxehost:51026/xsodata/getportfolio.xsodata/portfolioSet('meat%20seafood')",
+				"type": "default.portfolioSetType"
+			},
+			"ANZAHL_PRODUCTS": 82,
+			"ANZAHL_ORDERS": 129514,
+			"DEPARTMENT": "meat seafood",
+			"AISLE": "poultry counter"
+		}, {
+			"__metadata": {
+				"uri": "https://hxehost:51026/xsodata/getportfolio.xsodata/portfolioSet('meat%20seafood')",
+				"type": "default.portfolioSetType"
+			},
+			"ANZAHL_PRODUCTS": 80,
+			"ANZAHL_ORDERS": 20931,
+			"DEPARTMENT": "meat seafood",
+			"AISLE": "packaged seafood"
+		}, {
+			"__metadata": {
+				"uri": "https://hxehost:51026/xsodata/getportfolio.xsodata/portfolioSet('meat%20seafood')",
+				"type": "default.portfolioSetType"
+			},
+			"ANZAHL_PRODUCTS": 54,
+			"ANZAHL_ORDERS": 29642,
+			"DEPARTMENT": "meat seafood",
+			"AISLE": "seafood counter"
+		}, {
+			"__metadata": {
+				"uri": "https://hxehost:51026/xsodata/getportfolio.xsodata/portfolioSet('missing')",
+				"type": "default.portfolioSetType"
+			},
+			"ANZAHL_PRODUCTS": 1255,
+			"ANZAHL_ORDERS": 69145,
+			"DEPARTMENT": "missing",
+			"AISLE": "missing"
+		}, {
+			"__metadata": {
+				"uri": "https://hxehost:51026/xsodata/getportfolio.xsodata/portfolioSet('other')",
+				"type": "default.portfolioSetType"
+			},
+			"ANZAHL_PRODUCTS": 548,
+			"ANZAHL_ORDERS": 36291,
+			"DEPARTMENT": "other",
+			"AISLE": "other"
+		}, {
+			"__metadata": {
+				"uri": "https://hxehost:51026/xsodata/getportfolio.xsodata/portfolioSet('pantry')",
+				"type": "default.portfolioSetType"
+			},
+			"ANZAHL_PRODUCTS": 229,
+			"ANZAHL_ORDERS": 66926,
+			"DEPARTMENT": "pantry",
+			"AISLE": "honeys syrups nectars"
+		}, {
+			"__metadata": {
+				"uri": "https://hxehost:51026/xsodata/getportfolio.xsodata/portfolioSet('pantry')",
+				"type": "default.portfolioSetType"
+			},
+			"ANZAHL_PRODUCTS": 492,
+			"ANZAHL_ORDERS": 289400,
+			"DEPARTMENT": "pantry",
+			"AISLE": "spreads"
+		}, {
+			"__metadata": {
+				"uri": "https://hxehost:51026/xsodata/getportfolio.xsodata/portfolioSet('pantry')",
+				"type": "default.portfolioSetType"
+			},
+			"ANZAHL_PRODUCTS": 463,
+			"ANZAHL_ORDERS": 106089,
+			"DEPARTMENT": "pantry",
+			"AISLE": "doughs gelatins bake mixes"
+		}, {
+			"__metadata": {
+				"uri": "https://hxehost:51026/xsodata/getportfolio.xsodata/portfolioSet('pantry')",
+				"type": "default.portfolioSetType"
+			},
+			"ANZAHL_PRODUCTS": 465,
+			"ANZAHL_ORDERS": 222022,
+			"DEPARTMENT": "pantry",
+			"AISLE": "condiments"
+		}, {
+			"__metadata": {
+				"uri": "https://hxehost:51026/xsodata/getportfolio.xsodata/portfolioSet('pantry')",
+				"type": "default.portfolioSetType"
+			},
+			"ANZAHL_PRODUCTS": 409,
+			"ANZAHL_ORDERS": 62510,
+			"DEPARTMENT": "pantry",
+			"AISLE": "marinades meat preparation"
+		}, {
+			"__metadata": {
+				"uri": "https://hxehost:51026/xsodata/getportfolio.xsodata/portfolioSet('pantry')",
+				"type": "default.portfolioSetType"
+			},
+			"ANZAHL_PRODUCTS": 402,
+			"ANZAHL_ORDERS": 112639,
+			"DEPARTMENT": "pantry",
+			"AISLE": "pickled goods olives"
+		}, {
+			"__metadata": {
+				"uri": "https://hxehost:51026/xsodata/getportfolio.xsodata/portfolioSet('pantry')",
+				"type": "default.portfolioSetType"
+			},
+			"ANZAHL_PRODUCTS": 264,
+			"ANZAHL_ORDERS": 108691,
+			"DEPARTMENT": "pantry",
+			"AISLE": "preserved dips spreads"
+		}, {
+			"__metadata": {
+				"uri": "https://hxehost:51026/xsodata/getportfolio.xsodata/portfolioSet('pantry')",
+				"type": "default.portfolioSetType"
+			},
+			"ANZAHL_PRODUCTS": 290,
+			"ANZAHL_ORDERS": 23692,
+			"DEPARTMENT": "pantry",
+			"AISLE": "baking supplies decor"
+		}, {
+			"__metadata": {
+				"uri": "https://hxehost:51026/xsodata/getportfolio.xsodata/portfolioSet('pantry')",
+				"type": "default.portfolioSetType"
+			},
+			"ANZAHL_PRODUCTS": 375,
+			"ANZAHL_ORDERS": 245466,
+			"DEPARTMENT": "pantry",
+			"AISLE": "oils vinegars"
+		}, {
+			"__metadata": {
+				"uri": "https://hxehost:51026/xsodata/getportfolio.xsodata/portfolioSet('pantry')",
+				"type": "default.portfolioSetType"
+			},
+			"ANZAHL_PRODUCTS": 560,
+			"ANZAHL_ORDERS": 99331,
+			"DEPARTMENT": "pantry",
+			"AISLE": "salad dressing toppings"
+		}, {
+			"__metadata": {
+				"uri": "https://hxehost:51026/xsodata/getportfolio.xsodata/portfolioSet('pantry')",
+				"type": "default.portfolioSetType"
+			},
+			"ANZAHL_PRODUCTS": 623,
+			"ANZAHL_ORDERS": 326692,
+			"DEPARTMENT": "pantry",
+			"AISLE": "baking ingredients"
+		}, {
+			"__metadata": {
+				"uri": "https://hxehost:51026/xsodata/getportfolio.xsodata/portfolioSet('pantry')",
+				"type": "default.portfolioSetType"
+			},
+			"ANZAHL_PRODUCTS": 797,
+			"ANZAHL_ORDERS": 212092,
+			"DEPARTMENT": "pantry",
+			"AISLE": "spices seasonings"
+		}, {
+			"__metadata": {
+				"uri": "https://hxehost:51026/xsodata/getportfolio.xsodata/portfolioSet('personal%20care')",
+				"type": "default.portfolioSetType"
+			},
+			"ANZAHL_PRODUCTS": 565,
+			"ANZAHL_ORDERS": 63749,
+			"DEPARTMENT": "personal care",
+			"AISLE": "oral hygiene"
+		}, {
+			"__metadata": {
+				"uri": "https://hxehost:51026/xsodata/getportfolio.xsodata/portfolioSet('personal%20care')",
+				"type": "default.portfolioSetType"
+			},
+			"ANZAHL_PRODUCTS": 1038,
+			"ANZAHL_ORDERS": 45059,
+			"DEPARTMENT": "personal care",
+			"AISLE": "vitamins supplements"
+		}, {
+			"__metadata": {
+				"uri": "https://hxehost:51026/xsodata/getportfolio.xsodata/portfolioSet('personal%20care')",
+				"type": "default.portfolioSetType"
+			},
+			"ANZAHL_PRODUCTS": 504,
+			"ANZAHL_ORDERS": 40768,
+			"DEPARTMENT": "personal care",
+			"AISLE": "body lotions soap"
+		}, {
+			"__metadata": {
+				"uri": "https://hxehost:51026/xsodata/getportfolio.xsodata/portfolioSet('personal%20care')",
+				"type": "default.portfolioSetType"
+			},
+			"ANZAHL_PRODUCTS": 816,
+			"ANZAHL_ORDERS": 32013,
+			"DEPARTMENT": "personal care",
+			"AISLE": "hair care"
+		}, {
+			"__metadata": {
+				"uri": "https://hxehost:51026/xsodata/getportfolio.xsodata/portfolioSet('personal%20care')",
+				"type": "default.portfolioSetType"
+			},
+			"ANZAHL_PRODUCTS": 325,
+			"ANZAHL_ORDERS": 36599,
+			"DEPARTMENT": "personal care",
+			"AISLE": "protein meal replacements"
+		}, {
+			"__metadata": {
+				"uri": "https://hxehost:51026/xsodata/getportfolio.xsodata/portfolioSet('personal%20care')",
+				"type": "default.portfolioSetType"
+			},
+			"ANZAHL_PRODUCTS": 338,
+			"ANZAHL_ORDERS": 26873,
+			"DEPARTMENT": "personal care",
+			"AISLE": "digestion"
+		}, {
+			"__metadata": {
+				"uri": "https://hxehost:51026/xsodata/getportfolio.xsodata/portfolioSet('personal%20care')",
+				"type": "default.portfolioSetType"
+			},
+			"ANZAHL_PRODUCTS": 198,
+			"ANZAHL_ORDERS": 10344,
+			"DEPARTMENT": "personal care",
+			"AISLE": "shave needs"
+		}, {
+			"__metadata": {
+				"uri": "https://hxehost:51026/xsodata/getportfolio.xsodata/portfolioSet('personal%20care')",
+				"type": "default.portfolioSetType"
+			},
+			"ANZAHL_PRODUCTS": 172,
+			"ANZAHL_ORDERS": 18683,
+			"DEPARTMENT": "personal care",
+			"AISLE": "muscles joints pain relief"
+		}, {
+			"__metadata": {
+				"uri": "https://hxehost:51026/xsodata/getportfolio.xsodata/portfolioSet('personal%20care')",
+				"type": "default.portfolioSetType"
+			},
+			"ANZAHL_PRODUCTS": 317,
+			"ANZAHL_ORDERS": 14815,
+			"DEPARTMENT": "personal care",
+			"AISLE": "deodorants"
+		}, {
+			"__metadata": {
+				"uri": "https://hxehost:51026/xsodata/getportfolio.xsodata/portfolioSet('personal%20care')",
+				"type": "default.portfolioSetType"
+			},
+			"ANZAHL_PRODUCTS": 113,
+			"ANZAHL_ORDERS": 8974,
+			"DEPARTMENT": "personal care",
+			"AISLE": "eye ear care"
+		}, {
+			"__metadata": {
+				"uri": "https://hxehost:51026/xsodata/getportfolio.xsodata/portfolioSet('personal%20care')",
+				"type": "default.portfolioSetType"
+			},
+			"ANZAHL_PRODUCTS": 285,
+			"ANZAHL_ORDERS": 19753,
+			"DEPARTMENT": "personal care",
+			"AISLE": "feminine care"
+		}, {
+			"__metadata": {
+				"uri": "https://hxehost:51026/xsodata/getportfolio.xsodata/portfolioSet('personal%20care')",
+				"type": "default.portfolioSetType"
+			},
+			"ANZAHL_PRODUCTS": 277,
+			"ANZAHL_ORDERS": 12169,
+			"DEPARTMENT": "personal care",
+			"AISLE": "facial care"
+		}, {
+			"__metadata": {
+				"uri": "https://hxehost:51026/xsodata/getportfolio.xsodata/portfolioSet('personal%20care')",
+				"type": "default.portfolioSetType"
+			},
+			"ANZAHL_PRODUCTS": 240,
+			"ANZAHL_ORDERS": 10872,
+			"DEPARTMENT": "personal care",
+			"AISLE": "first aid"
+		}, {
+			"__metadata": {
+				"uri": "https://hxehost:51026/xsodata/getportfolio.xsodata/portfolioSet('personal%20care')",
+				"type": "default.portfolioSetType"
+			},
+			"ANZAHL_PRODUCTS": 525,
+			"ANZAHL_ORDERS": 64059,
+			"DEPARTMENT": "personal care",
+			"AISLE": "soap"
+		}, {
+			"__metadata": {
+				"uri": "https://hxehost:51026/xsodata/getportfolio.xsodata/portfolioSet('personal%20care')",
+				"type": "default.portfolioSetType"
+			},
+			"ANZAHL_PRODUCTS": 178,
+			"ANZAHL_ORDERS": 6168,
+			"DEPARTMENT": "personal care",
+			"AISLE": "beauty"
+		}, {
+			"__metadata": {
+				"uri": "https://hxehost:51026/xsodata/getportfolio.xsodata/portfolioSet('personal%20care')",
+				"type": "default.portfolioSetType"
+			},
+			"ANZAHL_PRODUCTS": 245,
+			"ANZAHL_ORDERS": 10164,
+			"DEPARTMENT": "personal care",
+			"AISLE": "skin care"
+		}, {
+			"__metadata": {
+				"uri": "https://hxehost:51026/xsodata/getportfolio.xsodata/portfolioSet('personal%20care')",
+				"type": "default.portfolioSetType"
+			},
+			"ANZAHL_PRODUCTS": 427,
+			"ANZAHL_ORDERS": 26061,
+			"DEPARTMENT": "personal care",
+			"AISLE": "cold flu allergy"
+		}, {
+			"__metadata": {
+				"uri": "https://hxehost:51026/xsodata/getportfolio.xsodata/portfolioSet('pets')",
+				"type": "default.portfolioSetType"
+			},
+			"ANZAHL_PRODUCTS": 473,
+			"ANZAHL_ORDERS": 34303,
+			"DEPARTMENT": "pets",
+			"AISLE": "dog food care"
+		}, {
+			"__metadata": {
+				"uri": "https://hxehost:51026/xsodata/getportfolio.xsodata/portfolioSet('pets')",
+				"type": "default.portfolioSetType"
+			},
+			"ANZAHL_PRODUCTS": 499,
+			"ANZAHL_ORDERS": 63421,
+			"DEPARTMENT": "pets",
+			"AISLE": "cat food care"
+		}, {
+			"__metadata": {
+				"uri": "https://hxehost:51026/xsodata/getportfolio.xsodata/portfolioSet('produce')",
+				"type": "default.portfolioSetType"
+			},
+			"ANZAHL_PRODUCTS": 615,
+			"ANZAHL_ORDERS": 1765313,
+			"DEPARTMENT": "produce",
+			"AISLE": "packaged vegetables fruits"
+		}, {
+			"__metadata": {
+				"uri": "https://hxehost:51026/xsodata/getportfolio.xsodata/portfolioSet('produce')",
+				"type": "default.portfolioSetType"
+			},
+			"ANZAHL_PRODUCTS": 32,
+			"ANZAHL_ORDERS": 276028,
+			"DEPARTMENT": "produce",
+			"AISLE": "packaged produce"
+		}, {
+			"__metadata": {
+				"uri": "https://hxehost:51026/xsodata/getportfolio.xsodata/portfolioSet('produce')",
+				"type": "default.portfolioSetType"
+			},
+			"ANZAHL_PRODUCTS": 569,
+			"ANZAHL_ORDERS": 3418021,
+			"DEPARTMENT": "produce",
+			"AISLE": "fresh vegetables"
+		}, {
+			"__metadata": {
+				"uri": "https://hxehost:51026/xsodata/getportfolio.xsodata/portfolioSet('produce')",
+				"type": "default.portfolioSetType"
+			},
+			"ANZAHL_PRODUCTS": 86,
+			"ANZAHL_ORDERS": 377741,
+			"DEPARTMENT": "produce",
+			"AISLE": "fresh herbs"
+		}, {
+			"__metadata": {
+				"uri": "https://hxehost:51026/xsodata/getportfolio.xsodata/portfolioSet('produce')",
+				"type": "default.portfolioSetType"
+			},
+			"ANZAHL_PRODUCTS": 382,
+			"ANZAHL_ORDERS": 3642188,
+			"DEPARTMENT": "produce",
+			"AISLE": "fresh fruits"
+		}, {
+			"__metadata": {
+				"uri": "https://hxehost:51026/xsodata/getportfolio.xsodata/portfolioSet('snacks')",
+				"type": "default.portfolioSetType"
+			},
+			"ANZAHL_PRODUCTS": 69,
+			"ANZAHL_ORDERS": 35590,
+			"DEPARTMENT": "snacks",
+			"AISLE": "trail mix snack mix"
+		}, {
+			"__metadata": {
+				"uri": "https://hxehost:51026/xsodata/getportfolio.xsodata/portfolioSet('snacks')",
+				"type": "default.portfolioSetType"
+			},
+			"ANZAHL_PRODUCTS": 85,
+			"ANZAHL_ORDERS": 11202,
+			"DEPARTMENT": "snacks",
+			"AISLE": "ice cream toppings"
+		}, {
+			"__metadata": {
+				"uri": "https://hxehost:51026/xsodata/getportfolio.xsodata/portfolioSet('snacks')",
+				"type": "default.portfolioSetType"
+			},
+			"ANZAHL_PRODUCTS": 1246,
+			"ANZAHL_ORDERS": 300567,
+			"DEPARTMENT": "snacks",
+			"AISLE": "candy chocolate"
+		}, {
+			"__metadata": {
+				"uri": "https://hxehost:51026/xsodata/getportfolio.xsodata/portfolioSet('snacks')",
+				"type": "default.portfolioSetType"
+			},
+			"ANZAHL_PRODUCTS": 989,
+			"ANZAHL_ORDERS": 722470,
+			"DEPARTMENT": "snacks",
+			"AISLE": "chips pretzels"
+		}, {
+			"__metadata": {
+				"uri": "https://hxehost:51026/xsodata/getportfolio.xsodata/portfolioSet('snacks')",
+				"type": "default.portfolioSetType"
+			},
+			"ANZAHL_PRODUCTS": 873,
+			"ANZAHL_ORDERS": 234065,
+			"DEPARTMENT": "snacks",
+			"AISLE": "cookies cakes"
+		}, {
+			"__metadata": {
+				"uri": "https://hxehost:51026/xsodata/getportfolio.xsodata/portfolioSet('snacks')",
+				"type": "default.portfolioSetType"
+			},
+			"ANZAHL_PRODUCTS": 168,
+			"ANZAHL_ORDERS": 22664,
+			"DEPARTMENT": "snacks",
+			"AISLE": "mint gum"
+		}, {
+			"__metadata": {
+				"uri": "https://hxehost:51026/xsodata/getportfolio.xsodata/portfolioSet('snacks')",
+				"type": "default.portfolioSetType"
+			},
+			"ANZAHL_PRODUCTS": 832,
+			"ANZAHL_ORDERS": 456386,
+			"DEPARTMENT": "snacks",
+			"AISLE": "energy granola bars"
+		}, {
+			"__metadata": {
+				"uri": "https://hxehost:51026/xsodata/getportfolio.xsodata/portfolioSet('snacks')",
+				"type": "default.portfolioSetType"
+			},
+			"ANZAHL_PRODUCTS": 747,
+			"ANZAHL_ORDERS": 458838,
+			"DEPARTMENT": "snacks",
+			"AISLE": "crackers"
+		}, {
+			"__metadata": {
+				"uri": "https://hxehost:51026/xsodata/getportfolio.xsodata/portfolioSet('snacks')",
+				"type": "default.portfolioSetType"
+			},
+			"ANZAHL_PRODUCTS": 582,
+			"ANZAHL_ORDERS": 306487,
+			"DEPARTMENT": "snacks",
+			"AISLE": "nuts seeds dried fruit"
+		}, {
+			"__metadata": {
+				"uri": "https://hxehost:51026/xsodata/getportfolio.xsodata/portfolioSet('snacks')",
+				"type": "default.portfolioSetType"
+			},
+			"ANZAHL_PRODUCTS": 356,
+			"ANZAHL_ORDERS": 175757,
+			"DEPARTMENT": "snacks",
+			"AISLE": "fruit vegetable snacks"
+		}, {
+			"__metadata": {
+				"uri": "https://hxehost:51026/xsodata/getportfolio.xsodata/portfolioSet('snacks')",
+				"type": "default.portfolioSetType"
+			},
+			"ANZAHL_PRODUCTS": 316,
+			"ANZAHL_ORDERS": 163524,
+			"DEPARTMENT": "snacks",
+			"AISLE": "popcorn jerky"
+		}]
+	}
+}

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Calculation:scenario xmlns:Calculation="http://www.sap.com/ndb/BiModelCalculation.ecore" id="core.models::AISLES" applyPrivilegeType="NONE" dataCategory="DIMENSION" dimensionType="STANDARD" schemaVersion="3.0" outputViewType="Projection" cacheInvalidationPeriod="NONE" enforceSqlExecution="false">
+<descriptions defaultDescription="AISLES"/>
+<localVariables/>
+<variableMappings/>
+<dataSources>
+  <DataSource id="S_AISLES">
+    <resourceUri>S_AISLES</resourceUri>
+  </DataSource>
+</dataSources>
+<calculationViews/>
+<logicalModel id="S_AISLES">
+  <attributes>
+    <attribute id="aisle_id" order="1" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="aisle_id"/>
+      <keyMapping columnObjectName="S_AISLES" columnName="aisle_id"/>
+    </attribute>
+    <attribute id="aisle" order="2" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="aisle"/>
+      <keyMapping columnObjectName="S_AISLES" columnName="aisle"/>
+    </attribute>
+  </attributes>
+  <calculatedAttributes/>
+  <baseMeasures/>
+  <calculatedMeasures/>
+  <restrictedMeasures/>
+</logicalModel>
+<layout>
+  <shapes>
+    <shape expanded="true" modelObjectName="Output" modelObjectNameSpace="MeasureGroup">
+      <upperLeftCorner x="40" y="85"/>
+    </shape>
+  </shapes>
+</layout>
+</Calculation:scenario>

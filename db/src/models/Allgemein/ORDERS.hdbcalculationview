@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Calculation:scenario xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Calculation="http://www.sap.com/ndb/BiModelCalculation.ecore" dimensionType="STANDARD" schemaVersion="3.0" dataCategory="DIMENSION" cacheInvalidationPeriod="NONE" id="core.models::ORDERS" applyPrivilegeType="NONE" outputViewType="Projection" enforceSqlExecution="false">
+<descriptions defaultDescription="ORDERS"></descriptions>
+<localVariables></localVariables>
+<variableMappings></variableMappings>
+<dataSources>
+  <DataSource id="S_ORDERS">
+    <resourceUri>S_ORDERS</resourceUri>
+  </DataSource>
+  <DataSource id="S_ORDER_PRODUCTS_PRIOR">
+    <resourceUri>S_ORDER_PRODUCTS_PRIOR</resourceUri>
+  </DataSource>
+  <DataSource id="core.models::PRODUCTS_DEPARTMENT_AISLE">
+    <resourceUri>core.models::PRODUCTS_DEPARTMENT_AISLE</resourceUri>
+  </DataSource>
+</dataSources>
+<calculationViews>
+  <calculationView xsi:type="Calculation:JoinView" joinType="inner" id="Orders" cardinality="C1_N">
+    <viewAttributes>
+      <viewAttribute id="order_id"></viewAttribute>
+      <viewAttribute id="user_id"></viewAttribute>
+      <viewAttribute id="order_number"></viewAttribute>
+      <viewAttribute id="order_dow"></viewAttribute>
+      <viewAttribute id="order_hour_of_day"></viewAttribute>
+      <viewAttribute id="days_since_prior"></viewAttribute>
+      <viewAttribute id="product_id"></viewAttribute>
+      <viewAttribute id="add_to_cart_order"></viewAttribute>
+      <viewAttribute id="reordered"></viewAttribute>
+    
+      <viewAttribute id="eval_set"></viewAttribute>
+    </viewAttributes>
+    <calculatedViewAttributes></calculatedViewAttributes>
+    <input node="S_ORDERS">
+      <mapping xsi:type="Calculation:AttributeMapping" source="order_id" target="order_id"></mapping>
+      <mapping xsi:type="Calculation:AttributeMapping" source="user_id" target="user_id"></mapping>
+      <mapping xsi:type="Calculation:AttributeMapping" source="order_number" target="order_number"></mapping>
+      <mapping xsi:type="Calculation:AttributeMapping" source="order_dow" target="order_dow"></mapping>
+      <mapping xsi:type="Calculation:AttributeMapping" source="order_hour_of_day" target="order_hour_of_day"></mapping>
+      <mapping xsi:type="Calculation:AttributeMapping" source="days_since_prior" target="days_since_prior"></mapping>
+    
+      <mapping xsi:type="Calculation:AttributeMapping" source="eval_set" target="eval_set"></mapping>
+    </input>
+    <input node="S_ORDER_PRODUCTS_PRIOR">
+      <mapping xsi:type="Calculation:AttributeMapping" source="product_id" target="product_id"></mapping>
+      <mapping xsi:type="Calculation:AttributeMapping" source="add_to_cart_order" target="add_to_cart_order"></mapping>
+      <mapping xsi:type="Calculation:AttributeMapping" source="reordered" target="reordered"></mapping>
+      <mapping xsi:type="Calculation:AttributeMapping" source="order_id" target="order_id"></mapping>
+    </input>
+    <joinAttribute name="order_id"></joinAttribute>
+  </calculationView>
+  <calculationView xsi:type="Calculation:JoinView" joinType="inner" id="OrdersProducts" cardinality="CN_N">
+    <viewAttributes>
+      <viewAttribute id="order_id"></viewAttribute>
+      <viewAttribute id="user_id"></viewAttribute>
+      <viewAttribute id="order_number"></viewAttribute>
+      <viewAttribute id="order_dow"></viewAttribute>
+      <viewAttribute id="order_hour_of_day"></viewAttribute>
+      <viewAttribute id="days_since_prior"></viewAttribute>
+      <viewAttribute id="product_id"></viewAttribute>
+      <viewAttribute id="add_to_cart_order"></viewAttribute>
+      <viewAttribute id="reordered"></viewAttribute>
+      <viewAttribute id="product_name"></viewAttribute>
+      <viewAttribute id="aisle"></viewAttribute>
+      <viewAttribute id="department"></viewAttribute>
+    
+      <viewAttribute id="eval_set"></viewAttribute>
+    </viewAttributes>
+    <calculatedViewAttributes></calculatedViewAttributes>
+    <input node="Orders">
+      <mapping xsi:type="Calculation:AttributeMapping" source="order_id" target="order_id"></mapping>
+      <mapping xsi:type="Calculation:AttributeMapping" source="user_id" target="user_id"></mapping>
+      <mapping xsi:type="Calculation:AttributeMapping" source="order_number" target="order_number"></mapping>
+      <mapping xsi:type="Calculation:AttributeMapping" source="order_dow" target="order_dow"></mapping>
+      <mapping xsi:type="Calculation:AttributeMapping" source="order_hour_of_day" target="order_hour_of_day"></mapping>
+      <mapping xsi:type="Calculation:AttributeMapping" source="days_since_prior" target="days_since_prior"></mapping>
+      <mapping xsi:type="Calculation:AttributeMapping" source="product_id" target="product_id"></mapping>
+      <mapping xsi:type="Calculation:AttributeMapping" source="add_to_cart_order" target="add_to_cart_order"></mapping>
+      <mapping xsi:type="Calculation:AttributeMapping" source="reordered" target="reordered"></mapping>
+    
+      <mapping xsi:type="Calculation:AttributeMapping" source="eval_set" target="eval_set"></mapping>
+    </input>
+    <input node="core.models::PRODUCTS_DEPARTMENT_AISLE">
+      <mapping xsi:type="Calculation:AttributeMapping" source="product_name" target="product_name"></mapping>
+      <mapping xsi:type="Calculation:AttributeMapping" source="aisle" target="aisle"></mapping>
+      <mapping xsi:type="Calculation:AttributeMapping" source="department" target="department"></mapping>
+      <mapping xsi:type="Calculation:AttributeMapping" source="product_id" target="product_id"></mapping>
+    </input>
+    <joinAttribute name="product_id"></joinAttribute>
+  </calculationView>
+</calculationViews>
+<logicalModel id="OrdersProducts">
+  <attributes>
+    <attribute id="order_id" displayAttribute="false" order="1" attributeHierarchyActive="false">
+      <descriptions defaultDescription="order_id"></descriptions>
+      <keyMapping columnObjectName="OrdersProducts" columnName="order_id"></keyMapping>
+    </attribute>
+    <attribute id="user_id" displayAttribute="false" order="2" attributeHierarchyActive="false">
+      <descriptions defaultDescription="user_id"></descriptions>
+      <keyMapping columnObjectName="OrdersProducts" columnName="user_id"></keyMapping>
+    </attribute>
+    <attribute id="order_number" displayAttribute="false" order="3" attributeHierarchyActive="false">
+      <descriptions defaultDescription="order_number"></descriptions>
+      <keyMapping columnObjectName="OrdersProducts" columnName="order_number"></keyMapping>
+    </attribute>
+    <attribute id="order_dow" displayAttribute="false" order="4" attributeHierarchyActive="false">
+      <descriptions defaultDescription="order_dow"></descriptions>
+      <keyMapping columnObjectName="OrdersProducts" columnName="order_dow"></keyMapping>
+    </attribute>
+    <attribute id="order_hour_of_day" displayAttribute="false" order="5" attributeHierarchyActive="false">
+      <descriptions defaultDescription="order_hour_of_day"></descriptions>
+      <keyMapping columnObjectName="OrdersProducts" columnName="order_hour_of_day"></keyMapping>
+    </attribute>
+    <attribute id="days_since_prior" displayAttribute="false" order="6" attributeHierarchyActive="false">
+      <descriptions defaultDescription="days_since_prior"></descriptions>
+      <keyMapping columnObjectName="OrdersProducts" columnName="days_since_prior"></keyMapping>
+    </attribute>
+    <attribute id="product_id" displayAttribute="false" order="7" attributeHierarchyActive="false">
+      <descriptions defaultDescription="product_id"></descriptions>
+      <keyMapping columnObjectName="OrdersProducts" columnName="product_id"></keyMapping>
+    </attribute>
+    <attribute id="add_to_cart_order" displayAttribute="false" order="8" attributeHierarchyActive="false">
+      <descriptions defaultDescription="add_to_cart_order"></descriptions>
+      <keyMapping columnObjectName="OrdersProducts" columnName="add_to_cart_order"></keyMapping>
+    </attribute>
+    <attribute id="reordered" displayAttribute="false" order="9" attributeHierarchyActive="false">
+      <descriptions defaultDescription="reordered"></descriptions>
+      <keyMapping columnObjectName="OrdersProducts" columnName="reordered"></keyMapping>
+    </attribute>
+    <attribute id="product_name" displayAttribute="false" order="10" attributeHierarchyActive="false">
+      <descriptions defaultDescription="product_name"></descriptions>
+      <keyMapping columnObjectName="OrdersProducts" columnName="product_name"></keyMapping>
+    </attribute>
+    <attribute id="aisle" displayAttribute="false" order="11" attributeHierarchyActive="false">
+      <descriptions defaultDescription="aisle"></descriptions>
+      <keyMapping columnObjectName="OrdersProducts" columnName="aisle"></keyMapping>
+    </attribute>
+    <attribute id="department" displayAttribute="false" order="12" attributeHierarchyActive="false">
+      <descriptions defaultDescription="department"></descriptions>
+      <keyMapping columnObjectName="OrdersProducts" columnName="department"></keyMapping>
+    </attribute>
+  
+    <attribute id="eval_set" displayAttribute="false" order="13" attributeHierarchyActive="false">
+      <descriptions defaultDescription="eval_set"></descriptions>
+      <keyMapping columnObjectName="OrdersProducts" columnName="eval_set"></keyMapping>
+    </attribute>
+  </attributes>
+  <calculatedAttributes></calculatedAttributes>
+  <baseMeasures></baseMeasures>
+  <calculatedMeasures></calculatedMeasures>
+  <restrictedMeasures></restrictedMeasures>
+</logicalModel>
+<layout>
+  <shapes>
+    <shape expanded="true" modelObjectNameSpace="MeasureGroup" modelObjectName="Output">
+      <upperLeftCorner x="40" y="85"></upperLeftCorner>
+    </shape>
+  
+    <shape expanded="true" modelObjectNameSpace="CalculationView" modelObjectName="Orders">
+      <upperLeftCorner x="100" y="367"></upperLeftCorner>
+      <rectangleSize width="160" height="30"></rectangleSize>
+    </shape>
+    <shape modelObjectNameSpace="Orders" modelObjectType="JoinNodeInput" modelObjectName="S_ORDERS">
+      <upperLeftCorner x="20" y="30"></upperLeftCorner>
+      <rectangleSize width="178"></rectangleSize>
+    </shape>
+    <shape modelObjectNameSpace="Orders" modelObjectType="JoinNodeInput" modelObjectName="S_ORDER_PRODUCTS_PRIOR">
+      <upperLeftCorner x="320" y="30"></upperLeftCorner>
+      <rectangleSize width="240"></rectangleSize>
+    </shape>
+    <shape expanded="true" modelObjectNameSpace="CalculationView" modelObjectName="OrdersProducts">
+      <upperLeftCorner x="110" y="214"></upperLeftCorner>
+      <rectangleSize width="160" height="30"></rectangleSize>
+    </shape>
+    <shape modelObjectNameSpace="OrdersProducts" modelObjectType="JoinNodeInput" modelObjectName="Orders">
+      <upperLeftCorner x="20" y="30"></upperLeftCorner>
+      <rectangleSize width="250"></rectangleSize>
+    </shape>
+    <shape modelObjectNameSpace="OrdersProducts" modelObjectType="JoinNodeInput" modelObjectName="core.models::PRODUCTS_DEPARTMENT_AISLE">
+      <upperLeftCorner x="320" y="30"></upperLeftCorner>
+      <rectangleSize width="210"></rectangleSize>
+    </shape>
+  </shapes>
+</layout>
+</Calculation:scenario>

@@ -1,0 +1,16 @@
+FUNCTION "ORDER_RANKING"( )
+       RETURNS table (PRODUCT_NAME NVARCHAR(200),
+       	AISLE NVARCHAR(50),
+       	DEPARTMENT NVARCHAR(50),
+       	COUNT_ORDERS INTEGER
+       )
+       LANGUAGE SQLSCRIPT 
+       SQL SECURITY INVOKER AS 
+BEGIN 
+
+	return
+	
+SELECT TOP 10 "product_name" as PRODUCT_NAME, "aisle" as AISLE, "department" as DEPARTMENT, Count("product_id") as COUNT_ORDERS from "core.models::ORDERS"
+GROUP BY "product_name", "aisle", "department"
+ORDER BY COUNT_ORDERS DESC;
+END;

@@ -1,0 +1,36 @@
+FUNCTION "PROBABILITY_REORDER_LAST_ORDER"(IP_DEPARTMENT NVARCHAR(50), IP_AISLE NVARCHAR(50), IP_PRODUCT NVARCHAR(200))
+       RETURNS table(DAYS_SINCE_PRIOR_ORDER INTEGER,
+       	PROBABILITY DOUBLE
+       )
+       LANGUAGE SQLSCRIPT 
+       SQL SECURITY INVOKER AS 
+BEGIN 
+
+IF :IP_AISLE = 'all'	THEN 
+	IP_AISLE = '%%';
+ELSE
+	IP_AISLE = IP_AISLE;
+END IF;
+
+IF :IP_DEPARTMENT = 'all'	THEN 
+	IP_DEPARTMENT = '%%';
+ELSE
+	IP_DEPARTMENT = IP_DEPARTMENT;
+END IF;
+
+IF :IP_PRODUCT = 'all'	THEN 
+	IP_PRODUCT = '%%';
+ELSE
+	IP_PRODUCT = IP_PRODUCT;
+END IF;
+
+return
+SELECT   "days_since_prior" as DAYS_SINCE_PRIOR_ORDER, 
+((SUM(Case When "reordered" = 1 then 1 else 0 End)) / count(*)) as PROBABILITY 
+		
+from "core.models::ORDERS"
+where "days_since_prior" IS NOT NULL and "department" LIKE IP_DEPARTMENT and "aisle" LIKE IP_AISLE and "product_name" LIKE IP_PRODUCT 
+group by  "days_since_prior";
+
+
+END;

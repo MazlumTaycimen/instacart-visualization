@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Calculation:scenario xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Calculation="http://www.sap.com/ndb/BiModelCalculation.ecore" id="testtest" applyPrivilegeType="NONE" dataCategory="DIMENSION" dimensionType="STANDARD" schemaVersion="3.0" outputViewType="Projection" cacheInvalidationPeriod="NONE" enforceSqlExecution="false">
+<descriptions defaultDescription="testtest"/>
+<localVariables/>
+<variableMappings/>
+<dataSources>
+  <DataSource id="S_PRODUCTS">
+    <resourceUri>S_PRODUCTS</resourceUri>
+  </DataSource>
+  <DataSource id="S_DEPARTMENTS">
+    <resourceUri>S_DEPARTMENTS</resourceUri>
+  </DataSource>
+</dataSources>
+<calculationViews>
+  <calculationView xsi:type="Calculation:JoinView" id="Join_1" cardinality="CN_N" joinType="inner">
+    <viewAttributes>
+      <viewAttribute id="product_name"/>
+      <viewAttribute id="department"/>
+      <viewAttribute id="product_id"/>
+      <viewAttribute hidden="true" id="JOIN$department_id$department_id"/>
+    </viewAttributes>
+    <calculatedViewAttributes/>
+    <input node="S_PRODUCTS">
+      <mapping xsi:type="Calculation:AttributeMapping" target="product_name" source="product_name"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="product_id" source="product_id"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="JOIN$department_id$department_id" source="department_id"/>
+    </input>
+    <input node="S_DEPARTMENTS">
+      <mapping xsi:type="Calculation:AttributeMapping" target="department" source="department"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="JOIN$department_id$department_id" source="department_id"/>
+    </input>
+    <joinAttribute name="JOIN$department_id$department_id"/>
+  </calculationView>
+</calculationViews>
+<logicalModel id="Join_1">
+  <attributes>
+    <attribute id="product_name" order="1" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="product_name"/>
+      <keyMapping columnObjectName="Join_1" columnName="product_name"/>
+    </attribute>
+    <attribute id="department" order="2" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="department"/>
+      <keyMapping columnObjectName="Join_1" columnName="department"/>
+    </attribute>
+    <attribute id="product_id" order="3" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="product_id"/>
+      <keyMapping columnObjectName="Join_1" columnName="product_id"/>
+    </attribute>
+  </attributes>
+  <calculatedAttributes/>
+  <baseMeasures/>
+  <calculatedMeasures/>
+  <restrictedMeasures/>
+</logicalModel>
+<layout>
+  <shapes>
+    <shape expanded="true" modelObjectName="Output" modelObjectNameSpace="MeasureGroup">
+      <upperLeftCorner x="40" y="85"/>
+    </shape>
+  
+    <shape expanded="true" modelObjectName="Join_1" modelObjectNameSpace="CalculationView">
+      <upperLeftCorner x="44" y="203"/>
+      <rectangleSize height="30" width="160"/>
+    </shape>
+    <shape modelObjectName="S_PRODUCTS" modelObjectNameSpace="Join_1" modelObjectType="JoinNodeInput">
+      <upperLeftCorner x="280" y="46"/>
+      <rectangleSize width="156.32373046875"/>
+    </shape>
+    <shape modelObjectName="S_DEPARTMENTS" modelObjectNameSpace="Join_1" modelObjectType="JoinNodeInput">
+      <upperLeftCorner x="524" y="46"/>
+      <rectangleSize width="169.123046875"/>
+    </shape>
+  </shapes>
+</layout>
+</Calculation:scenario>

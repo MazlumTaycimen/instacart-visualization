@@ -1,0 +1,5 @@
+service{
+"core.models::DEPARTMENTS"
+as "departmentsSet"
+keys("department_id");
+}

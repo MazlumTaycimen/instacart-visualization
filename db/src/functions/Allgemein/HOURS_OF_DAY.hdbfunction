@@ -1,0 +1,12 @@
+FUNCTION "HOURS_OF_DAY"( )
+       RETURNS table (HOUR_OF_DAY Integer)
+       LANGUAGE SQLSCRIPT 
+       SQL SECURITY INVOKER AS 
+BEGIN 
+
+return
+SELECT "order_hour_of_day" as HOUR_OF_DAY
+FROM "core.models::ORDERS"
+GROUP BY "order_hour_of_day";
+
+END;

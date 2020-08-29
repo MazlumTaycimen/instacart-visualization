@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Calculation:scenario xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Calculation="http://www.sap.com/ndb/BiModelCalculation.ecore" xmlns:Variable="http://www.sap.com/ndb/BiModelVariable.ecore" id="core.models::ORDERS_DAY_OF_WEEK" applyPrivilegeType="NONE" dataCategory="DIMENSION" dimensionType="STANDARD" schemaVersion="3.0" outputViewType="Projection" cacheInvalidationPeriod="NONE" enforceSqlExecution="false">
+<descriptions defaultDescription="ORDERS_DAY_OF_WEEK"/>
+<localVariables>
+  <variable id="IP_DEPARTMENT" parameter="true">
+    <descriptions defaultDescription=" "/>
+    <variableProperties datatype="NVARCHAR" length="50">
+      <valueDomain type="empty"/>
+      <selection/>
+    </variableProperties>
+  </variable>
+  <variable id="IP_AISLE" parameter="true">
+    <descriptions defaultDescription=" "/>
+    <variableProperties datatype="NVARCHAR" length="50">
+      <valueDomain type="empty"/>
+      <selection/>
+    </variableProperties>
+  </variable>
+  <variable id="IP_PRODUCT" parameter="true">
+    <descriptions defaultDescription=" "/>
+    <variableProperties datatype="NVARCHAR" length="150">
+      <valueDomain type="empty"/>
+      <selection/>
+    </variableProperties>
+  </variable>
+</localVariables>
+<variableMappings>
+  <mapping xsi:type="Variable:VariableMapping" dataSource="ORDERS_DAY_OF_WEEK">
+    <targetVariable name="IP_DEPARTMENT" resourceUri="ORDERS_DAY_OF_WEEK"/>
+    <localVariable>IP_DEPARTMENT</localVariable>
+  </mapping>
+  <mapping xsi:type="Variable:VariableMapping" dataSource="ORDERS_DAY_OF_WEEK">
+    <targetVariable name="IP_AISLE" resourceUri="ORDERS_DAY_OF_WEEK"/>
+    <localVariable>IP_AISLE</localVariable>
+  </mapping>
+  <mapping xsi:type="Variable:VariableMapping" dataSource="ORDERS_DAY_OF_WEEK">
+    <targetVariable name="IP_PRODUCT" resourceUri="ORDERS_DAY_OF_WEEK"/>
+    <localVariable>IP_PRODUCT</localVariable>
+  </mapping>
+</variableMappings>
+<dataSources>
+  <DataSource id="ORDERS_DAY_OF_WEEK" type="TABLE_FUNCTION">
+    <resourceUri>ORDERS_DAY_OF_WEEK</resourceUri>
+  </DataSource>
+</dataSources>
+<calculationViews/>
+<logicalModel id="ORDERS_DAY_OF_WEEK" filterExpressionLanguage="SQL">
+  <attributes>
+    <attribute id="ANZAHL" order="1" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="ANZAHL"/>
+      <keyMapping columnObjectName="ORDERS_DAY_OF_WEEK" columnName="ANZAHL"/>
+    </attribute>
+    <attribute id="DAY_OF_WEEK" order="2" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="DAY_OF_WEEK"/>
+      <keyMapping columnObjectName="ORDERS_DAY_OF_WEEK" columnName="DAY_OF_WEEK"/>
+    </attribute>
+  
+    <attribute id="DAY_OF_WEEK_ID" order="3" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="DAY_OF_WEEK_ID"/>
+      <keyMapping columnObjectName="ORDERS_DAY_OF_WEEK" columnName="DAY_OF_WEEK_ID"/>
+    </attribute>
+  </attributes>
+  <calculatedAttributes/>
+  <baseMeasures/>
+  <calculatedMeasures/>
+  <restrictedMeasures/>
+
+  <filter>&quot;DAY_OF_WEEK_ID&quot;</filter>
+</logicalModel>
+<layout>
+  <shapes>
+    <shape expanded="true" modelObjectName="Output" modelObjectNameSpace="MeasureGroup">
+      <upperLeftCorner x="40" y="85"/>
+    </shape>
+  </shapes>
+</layout>
+</Calculation:scenario>

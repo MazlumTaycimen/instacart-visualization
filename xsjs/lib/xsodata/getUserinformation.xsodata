@@ -1,0 +1,6 @@
+service{
+"core.models::USER_ORDERS"
+as "Userinformations"
+keys("USER_ID")
+parameters via entity "IP";
+}

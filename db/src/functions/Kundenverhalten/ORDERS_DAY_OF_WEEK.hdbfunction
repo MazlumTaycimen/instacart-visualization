@@ -1,0 +1,47 @@
+FUNCTION "ORDERS_DAY_OF_WEEK"(IP_DEPARTMENT NVARCHAR(50), IP_AISLE NVARCHAR(50), IP_PRODUCT NVARCHAR(200) )
+       RETURNS table (DAY_OF_WEEK_ID INTEGER, 
+       	ANZAHL INTEGER, DAY_OF_WEEK NVARCHAR(15)
+       	)
+       LANGUAGE SQLSCRIPT 
+       SQL SECURITY INVOKER AS 
+BEGIN 
+
+
+
+IF :IP_AISLE = 'all'	THEN 
+	IP_AISLE = '%%';
+ELSE
+	IP_AISLE = IP_AISLE;
+END IF;
+
+IF :IP_DEPARTMENT = 'all'	THEN 
+	IP_DEPARTMENT = '%%';
+ELSE
+	IP_DEPARTMENT = IP_DEPARTMENT;
+END IF;
+
+IF :IP_PRODUCT = 'all'	THEN 
+	IP_PRODUCT = '%%';
+ELSE
+	IP_PRODUCT = IP_PRODUCT;
+END IF;
+
+
+
+return
+SELECT "order_dow" as DAY_OF_WEEK_ID, Count("order_dow") as ANZAHL,
+CASE
+	WHEN "order_dow" = 2 THEN 'Monday'
+	WHEN "order_dow" = 3 THEN 'Tuesday'
+	WHEN "order_dow" = 4 THEN 'Wednesday'
+	WHEN "order_dow" = 5 THEN 'Thursday'
+	WHEN "order_dow" = 6 THEN 'Friday'
+	WHEN "order_dow" = 7 THEN 'Saturday'
+	WHEN "order_dow" = 8 THEN 'Sunday'
+
+END AS DAY_OF_WEEK
+from "core.models::ORDERS"
+WHERE "department" LIKE IP_DEPARTMENT and "aisle" LIKE IP_AISLE and "product_name" LIKE IP_PRODUCT
+group by "order_dow";
+
+END;

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Calculation:scenario xmlns:Calculation="http://www.sap.com/ndb/BiModelCalculation.ecore" id="core.models::HOURS_OF_DAY" applyPrivilegeType="NONE" dataCategory="DIMENSION" dimensionType="STANDARD" schemaVersion="3.0" outputViewType="Projection" cacheInvalidationPeriod="NONE" enforceSqlExecution="false">
+<descriptions defaultDescription="HOURS_OF_DAY"/>
+<localVariables/>
+<variableMappings/>
+<dataSources>
+  <DataSource id="HOURS_OF_DAY" type="TABLE_FUNCTION">
+    <resourceUri>HOURS_OF_DAY</resourceUri>
+  </DataSource>
+</dataSources>
+<calculationViews/>
+<logicalModel id="HOURS_OF_DAY">
+  <attributes>
+    <attribute id="HOUR_OF_DAY" order="1" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="HOUR_OF_DAY"/>
+      <keyMapping columnObjectName="HOURS_OF_DAY" columnName="HOUR_OF_DAY"/>
+    </attribute>
+  </attributes>
+  <calculatedAttributes/>
+  <baseMeasures/>
+  <calculatedMeasures/>
+  <restrictedMeasures/>
+</logicalModel>
+<layout>
+  <shapes>
+    <shape expanded="true" modelObjectName="Output" modelObjectNameSpace="MeasureGroup">
+      <upperLeftCorner x="40" y="85"/>
+    </shape>
+  </shapes>
+</layout>
+</Calculation:scenario>

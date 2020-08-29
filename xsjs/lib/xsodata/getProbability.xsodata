@@ -1,0 +1,10 @@
+service{
+"core.models::PROBAILITY_REORDER_NUMBER_OF_ORDERS"
+as "probabilitySet"
+keys("ORDER_NUMBER")
+parameters via entity "IP8";
+}
+settings {  
+  limits 
+      max_records = 50000;
+}

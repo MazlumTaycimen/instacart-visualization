@@ -1,0 +1,19 @@
+/* PRODUKT_PORTFOLIO */
+FUNCTION "PRODUCT_PORTFOLIO"( )
+       RETURNS table (DEPARTMENT NVARCHAR(50), AISLE NVARCHAR(50), ANZAHL_PRODUCTS INTEGER, ANZAHL_ORDERS INTEGER)
+       LANGUAGE SQLSCRIPT 
+       SQL SECURITY INVOKER AS 
+BEGIN 
+
+
+return
+
+
+SELECT "department" as DEPARTMENT, "aisle" AS AISLE, count(DISTINCT "product_name") AS ANZAHL_PRODUCTS, count("product_name") as ANZAHL_ORDERS
+from "core.models::ORDERS"
+
+group by "department", "aisle"
+order by  "department";
+END;
+
+/*Tabelle Aisle, Department, Anzahl Produkte, Anzahl Verkäufe  nach AISLE*/

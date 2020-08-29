@@ -1,0 +1,9 @@
+service{
+"core.models::USERS"
+as "UsersSet"
+keys("USER_ID");
+}
+settings {  
+  limits 
+      max_records = 50000;
+}

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Calculation:scenario xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Calculation="http://www.sap.com/ndb/BiModelCalculation.ecore" xmlns:Variable="http://www.sap.com/ndb/BiModelVariable.ecore" id="core.models::MOST_OFTEN_REORDERED" applyPrivilegeType="NONE" dataCategory="DIMENSION" dimensionType="STANDARD" schemaVersion="3.0" outputViewType="Projection" cacheInvalidationPeriod="NONE" enforceSqlExecution="false">
+<descriptions defaultDescription="MOST_OFTEN_REORDERED"/>
+<localVariables>
+  <variable id="IP_DEPARTMENT" parameter="true">
+    <descriptions defaultDescription=" "/>
+    <variableProperties datatype="NVARCHAR" length="50">
+      <valueDomain type="empty"/>
+      <selection/>
+    </variableProperties>
+  </variable>
+  <variable id="IP_AISLE" parameter="true">
+    <descriptions defaultDescription=" "/>
+    <variableProperties datatype="NVARCHAR" length="50">
+      <valueDomain type="empty"/>
+      <selection/>
+    </variableProperties>
+  </variable>
+  <variable id="IP_PRODUCT" parameter="true">
+    <descriptions defaultDescription=" "/>
+    <variableProperties datatype="NVARCHAR" length="150">
+      <valueDomain type="empty"/>
+      <selection/>
+    </variableProperties>
+  </variable>
+</localVariables>
+<variableMappings>
+  <mapping xsi:type="Variable:VariableMapping" dataSource="MOST_OFTEN_REORDERED">
+    <targetVariable name="IP_DEPARTMENT" resourceUri="MOST_OFTEN_REORDERED"/>
+    <localVariable>IP_DEPARTMENT</localVariable>
+  </mapping>
+  <mapping xsi:type="Variable:VariableMapping" dataSource="MOST_OFTEN_REORDERED">
+    <targetVariable name="IP_AISLE" resourceUri="MOST_OFTEN_REORDERED"/>
+    <localVariable>IP_AISLE</localVariable>
+  </mapping>
+  <mapping xsi:type="Variable:VariableMapping" dataSource="MOST_OFTEN_REORDERED">
+    <targetVariable name="IP_PRODUCT" resourceUri="MOST_OFTEN_REORDERED"/>
+    <localVariable>IP_PRODUCT</localVariable>
+  </mapping>
+</variableMappings>
+<dataSources>
+  <DataSource id="MOST_OFTEN_REORDERED" type="TABLE_FUNCTION">
+    <resourceUri>MOST_OFTEN_REORDERED</resourceUri>
+  </DataSource>
+</dataSources>
+<calculationViews/>
+<logicalModel id="MOST_OFTEN_REORDERED">
+  <attributes>
+    <attribute id="PRODUCT_NAME" order="1" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PRODUCT_NAME"/>
+      <keyMapping columnObjectName="MOST_OFTEN_REORDERED" columnName="PRODUCT_NAME"/>
+    </attribute>
+    <attribute id="ANZAHL" order="2" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="ANZAHL"/>
+      <keyMapping columnObjectName="MOST_OFTEN_REORDERED" columnName="ANZAHL"/>
+    </attribute></attributes>
+  <calculatedAttributes/>
+  <baseMeasures/>
+  <calculatedMeasures/>
+  <restrictedMeasures/>
+</logicalModel>
+<layout>
+  <shapes>
+    <shape expanded="true" modelObjectName="Output" modelObjectNameSpace="MeasureGroup">
+      <upperLeftCorner x="40" y="85"/>
+    </shape>
+  </shapes>
+</layout>
+</Calculation:scenario>

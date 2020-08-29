@@ -1,0 +1,13 @@
+FUNCTION "DAYS_OF_WEEK"( )
+       RETURNS table (DAY_OF_WEEK Integer)
+       LANGUAGE SQLSCRIPT 
+       SQL SECURITY INVOKER AS 
+BEGIN 
+	
+	return
+	
+SELECT "order_dow" as DAY_OF_WEEK
+FROM "core.models::ORDERS"
+GROUP BY "order_dow";
+
+END;

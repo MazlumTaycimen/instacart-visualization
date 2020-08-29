@@ -1,0 +1,7 @@
+service{
+"core.models::PRODUCT_PORTFOLIO"
+as "portfolioSet"
+keys("DEPARTMENT");
+}
+
+ 
